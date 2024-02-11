@@ -1,4 +1,3 @@
-package Basic;
 class variables
 {
 	public static void main(String args[])

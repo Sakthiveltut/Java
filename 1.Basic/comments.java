@@ -1,4 +1,3 @@
-package Basic;
 public class comments {
 
   public static void main(String[] args) {
