@@ -1,6 +1,4 @@
 package Difficult;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class task1 {
@@ -16,11 +14,8 @@ public class task1 {
       "Beautiful",
       "everybody",
     };
-    String wordsList1[] = wordsList;
 
     String sWords[] = userSen.split("\\s+");
-    String sWords1[] = sWords;
-
     int verifiedLetter = 0;
 
     for (int i = 0; i <= sWords.length - 1; i++) {
@@ -29,27 +24,18 @@ public class task1 {
           if (sWords[i].length() == wordsList[j].length()) {
             char[] userLetters = sWords[i].toCharArray();
             char[] wordLetters = wordsList[j].toCharArray();
-            for (char letter : userLetters) {
-              System.out.println("before " + letter);
-            }
-            for (char letter : wordLetters) {
-              System.out.println("after " + letter);
-            }
             for (int k = 0; k <= userLetters.length - 1; k++) {
               if (userLetters[k] == wordLetters[k]) {
-                System.out.println(userLetters[k] + "" + wordLetters[k]);
                 verifiedLetter += 1;
-                System.out.println("verifiedLetter" + verifiedLetter);
               }
             }
             System.out.println(verifiedLetter + " " + userLetters.length);
             int chance = ((verifiedLetter * 100) / userLetters.length);
-            System.out.println("chance:" + chance);
             if (chance >= 50) {
-              System.out.println(sWords1 + "" + sWords1[i]);
-              int wordPosition = findPosition(sWords1, sWords1[i]);
+              System.out.println(sWords + "" + sWords[i]);
+              int wordPosition = findPosition(sWords, sWords[i]);
               System.out.println(wordPosition);
-              sWords1[wordPosition] = wordsList1[j];
+              sWords[wordPosition] = wordsList[j];
               break;
             }
           }
@@ -57,11 +43,12 @@ public class task1 {
         verifiedLetter = 0;
       }
     }
-    for (String sword : sWords1) {
+    for (String sword : sWords) {
       System.out.println(sword);
     }
   }
 
+  //give value to return position of array
   static int findPosition(String[] arr, String value) {
     for (int i = 0; i < arr.length; i++) {
       if (value.equals(arr[i])) {
