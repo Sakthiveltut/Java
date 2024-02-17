@@ -1,6 +1,6 @@
-package Practice;
+package Interview.zoho.easy;
 
-public class demo2 {
+public class qs2 {
 
   public static void main(String[] args) {
     // System.out.println("hello");

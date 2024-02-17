@@ -1,6 +1,6 @@
-package Practice;
+package Interview.zoho.easy;
 
-public class demo1 {
+public class qs1 {
 
   public static void main(String[] args) {
     double d = 12d;

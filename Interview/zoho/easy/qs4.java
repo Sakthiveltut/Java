@@ -1,6 +1,6 @@
-package Practice;
+package Interview.zoho.easy;
 
-public class demo4 {
+public class qs4 {
 
   public static void main(String[] args) {
     char a = '5',b = '6';

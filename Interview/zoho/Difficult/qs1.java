@@ -1,7 +1,7 @@
-package Difficult;
+package Interview.zoho.Difficult;
 import java.util.Scanner;
 
-public class task1 {
+public class qs1 {
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
