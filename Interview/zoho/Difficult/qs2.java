@@ -2,6 +2,9 @@ package Interview.zoho.Difficult;
 
 import java.util.Scanner;
 
+//ilikezoho
+//i like zoho
+
 public class qs2 {
     public static void main(String[] args) {
         String wordsList[] = {

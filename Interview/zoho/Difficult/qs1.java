@@ -1,11 +1,14 @@
 package Interview.zoho.Difficult;
 import java.util.Scanner;
 
+//i like hoho
+//i like zoho
+
 public class qs1 {
 
-  public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    String userSen = sc.nextLine();
+  public static void main(String[] args) {                       
+    Scanner sc = new Scanner(System.in);                         
+    String userSen = sc.nextLine();       
     String wordsList[] = {
       "sun",
       "day",
