@@ -2,6 +2,7 @@ public class StaticNestedClass
 {
 	static class InnerClass
 	{
+		
 		static void innerMethod()
 		{
 			System.out.println("innerMethod");

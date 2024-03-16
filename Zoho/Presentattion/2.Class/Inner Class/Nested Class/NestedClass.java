@@ -10,7 +10,6 @@ class OuterClass
 			System.out.println(outerClassVar);
 		}
 	}
-	
 	void outerMethod()
 	{
 		InnerClass ic = new InnerClass();
@@ -25,7 +24,10 @@ public class NestedClass
 		OuterClass oc = new OuterClass();
 		oc.outerMethod();
 
-		OuterClass.InnerClass oi = new OuterClass().new InnerClass();
-		oi.innerMethod();
+		OuterClass.InnerClass oi1 = new OuterClass().new InnerClass();
+		oi1.innerMethod();
+
+		OuterClass.InnerClass oi2 = oc.new InnerClass();
+		oi2.innerMethod();
 	}
 }

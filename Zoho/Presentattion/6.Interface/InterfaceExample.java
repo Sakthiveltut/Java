@@ -48,7 +48,6 @@ class Device
 		};
 		c.check();
 		System.out.println(c.FAN);
-		
 	}
 }
 
