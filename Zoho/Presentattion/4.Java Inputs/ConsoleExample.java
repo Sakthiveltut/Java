@@ -3,6 +3,7 @@ import java.io.Console;
 public class ConsoleExample {
     public static void main(String[] args) {
         Console console = System.console();
+	//Console console = new Console();
 
         if (console != null) {
             String line = console.readLine("Enter a line: ");

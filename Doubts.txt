@@ -1,0 +1,19 @@
+arr and arrList object print
+
+toString()
+
+try with resource
+
+-5<<2 - 
+	0000 0000 0000 0101
+
+	1111 1111 1111 1010
+
+			  1
+	1111 1111 1111 1011
+
+
+
+	
+
+

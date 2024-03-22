@@ -1,0 +1,69 @@
+Of course! Here are even more Java keywords in alphabetical order:
+
+1. `abstract`
+2. `assert`
+3. `boolean`
+4. `break`
+5. `byte`
+6. `case`
+7. `catch`
+8. `char`
+9. `class`
+10. `const` (reserved, not used)
+11. `continue`
+12. `default`
+13. `do`
+14. `double`
+15. `else`
+16. `enum`
+17. `exports` (Java 9 and later)
+18. `extends`
+19. `final`
+20. `finally`
+21. `float`
+22. `for`
+23. `goto` (reserved, not used)
+24. `if`
+25. `implements`
+26. `import`
+27. `instanceof`
+28. `int`
+29. `interface`
+30. `long`
+31. `module` (Java 9 and later)
+32. `native`
+33. `new`
+34. `null`
+35. `open` (Java 9 and later)
+36. `opens` (Java 9 and later)
+37. `package`
+38. `private`
+39. `protected`
+40. `public`
+41. `requires` (Java 9 and later)
+42. `return`
+43. `short`
+44. `static`
+45. `strictfp`
+46. `super`
+47. `switch`
+48. `synchronized`
+49. `this`
+50. `throw`
+51. `throws`
+52. `to` (Java 12 and later, for switch expressions)
+53. `transient`
+54. `try`
+55. `void`
+56. `volatile`
+57. `while`
+58. `true`
+59. `false`
+60. `var` (Java 10 and later)
+61. `yield` (Java 13 and later)
+62. `record` (Java 14 and later)
+63. `sealed` (Java 15 and later)
+64. `non-sealed` (Java 15 and later)
+65. `permits` (Java 15 and later)
+66. `with` (Java 14 and later, for switch expressions)
+67. `instanceof`

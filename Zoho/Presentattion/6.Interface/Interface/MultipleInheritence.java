@@ -1,4 +1,4 @@
-class C extends A, B{  
+class MultipleInheritence extends A, B{  
    
  public static void main(String args[]){  
    C obj=new C();  

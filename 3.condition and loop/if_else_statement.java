@@ -11,6 +11,5 @@ public class if_else_statement {
         } else {
             System.out.println("Year " + year + " is not a leap year");
         }
- 
     }
 }

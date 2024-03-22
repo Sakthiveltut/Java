@@ -5,11 +5,10 @@ public class enumDemo {
         HIGH
     }
     public static void main(String[] args) {
-        //Assign Enum Variable
+
         GameLevel a=GameLevel.HIGH;
         System.out.println(a);
  
-        //Use Enum in Switch
         switch(a) {
             case LOW:
                 System.out.println("Low level");
@@ -22,7 +21,6 @@ public class enumDemo {
                 break;
         }
  
-        //Enum by loop
         for (GameLevel level : GameLevel.values()) {
             System.out.println(level);
         }
