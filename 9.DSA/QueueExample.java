@@ -1,30 +1,45 @@
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class QueueExample {
     public static void main(String[] args) {
-        // Create a queue using LinkedList
-        Queue<String> queue = new LinkedList<>();
+        
+        Queue<Integer> queue = new LinkedList<>();
+	
+	Queue<Integer> queue1 = new LinkedList<>();	
+	
+	for(int i=1;i<=10;i++){
+		queue.add(i);	
+	}
+	queue1.addAll(Arrays.asList(345,435));
+	queue1.addAll(queue);
+	
+	//queue1.addAll(queue);
+     		
+        //System.out.println("First element:"+queue.peek()); //null
+	System.out.println("Data: " + queue);
+	
+	System.out.println("First element:"+queue.offer(0)+queue.offer(1)+queue.offer(2)); //null
+	System.out.println("Data: " + queue);
 
-        // Enqueue (add) elements to the queue
-        queue.add("Element 1");
-        queue.offer("Element 2");
-        queue.add("Element 3");
+        //System.out.println("Removed element: "+queue.poll()); //null
+	System.out.println("Data: " + queue);
+	
+	//System.out.println("Removed element: "+queue.remove()); //NoSuchElementException
+	System.out.println("Data: " + queue);
 
-        // Peek at the front element without removing it
-        String frontElement = queue.peek();
-        System.out.println("Front element: " + frontElement);
+        //System.out.println("Is queue empty? " +queue.isEmpty()); //true
+	System.out.println("Data: " + queue);
 
-        // Dequeue (remove) elements from the queue
-        String removedElement = queue.poll();
-        System.out.println("Removed element: " + removedElement);
+        //System.out.println("Size of the queue: "+queue.size()); //0
+	System.out.println("Data: " + queue);
 
-        // Check if the queue is empty
-        boolean isEmpty = queue.isEmpty();
-        System.out.println("Is queue empty? " + isEmpty);
-
-        // Size of the queue
-        int size = queue.size();
-        System.out.println("Size of the queue: " + size);
+	//System.out.println("First element: "+queue.element()); //NoSuchElementException
+	System.out.println("Data: " + queue);
+	
+	//System.out.println("First element: "+pqueue.add(1)); //NoSuchElementException
+	System.out.println("Data q1: " + queue1);
+	
+	
+	
     }
 }

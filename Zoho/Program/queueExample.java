@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class queueExample{
+public class QueueExample{
 
 	public static void main(String[] args){
 
@@ -10,7 +10,7 @@ public class queueExample{
 	q.add(2);
 	q.add(3);
 	q.add(4);
-	q.offer(0);
+	//q.offer(0);
 	
 	System.out.println(q);
 

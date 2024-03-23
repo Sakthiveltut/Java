@@ -1,0 +1,4 @@
+ArrayBlockingQueue:
+	Bounded: Unlike an ArrayList or other dynamic arrays, ArrayBlockingQueue has a fixed capacity determined at the time of its creation. 
+	Once the queue reaches its capacity, attempts to add more elements will block until space becomes available. 
+	This feature helps in scenarios where you want to limit resource usage or prevent memory overflow.

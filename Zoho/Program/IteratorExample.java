@@ -10,15 +10,14 @@ public class IteratorExample {
         list.add("Element 2");
         list.add("Element 3");
 
-        // Obtaining an Iterator
+
         Iterator<String> iterator = list.iterator();
 
-        // Iterating over the elements using Iterator
+
         while (iterator.hasNext()) {
             String element = iterator.next();
             System.out.println(element);
 
-            // Optional: Removing an element during iteration
             // iterator.remove();
         }
     }
