@@ -15,11 +15,9 @@ public class mt1{
 	//System.out.println(object1.isAlive());
 
 	//object1.join();
-	object2.join();
+	//object2.join();
 
-	System.out.println("class mt");
-
-	
+	//System.out.println("class mt");
 
 	}
 }

@@ -4,14 +4,15 @@ public class ArrayBlockingQueueExample{
 
 	public static void main(String[] args) throws InterruptedException{
 	
-		LinkedBlockingQueue<Integer> obj1 = new LinkedBlockingQueue<>();	
+		SynchronousQueue<Integer> obj1 = new SynchronousQueue<>();	
 		
 		
 		new Thread(()->{
 			try{
 				for(int i=1;i<=10;i++){
 					obj1.put(i);
-					System.out.println("put "+i);
+					System.out.println("put()"+i);
+					//Thread.sleep(2000);
 				}
 			}catch(InterruptedException e){
 				e.printStackTrace();	
@@ -23,12 +24,15 @@ public class ArrayBlockingQueueExample{
 		new Thread(()->{
 			try{
 				for(int i=1;i<=5;i++){
-					System.out.println("take "+obj1.take());
+					System.out.println("take()"+obj1.take());
+					//Thread.sleep(2000);
 				}
 			}catch(InterruptedException e){
 				e.printStackTrace();	
 			}
 			
 		}).start();
+		
+
 	}
 }

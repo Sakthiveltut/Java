@@ -20,16 +20,16 @@ public class ArrayBlockingQueueExample{
 		}).start();
 
 
-		/*new Thread(()->{
+		new Thread(()->{
 			try{
-				for(int i=1;i<=10;i++){
+				for(int i=1;i<=5;i++){
 					System.out.println("take()"+obj1.take());
 				}
 			}catch(InterruptedException e){
 				e.printStackTrace();	
 			}
 			
-		}).start();	*/
+		}).start();
 		
 
 	}
