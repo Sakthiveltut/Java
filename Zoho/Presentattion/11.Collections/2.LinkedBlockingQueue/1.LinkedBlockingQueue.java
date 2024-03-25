@@ -16,6 +16,7 @@ public class QueueExample {
 	obj2.addAll(obj1);
 	
 	//obj2.addAll(obj1);
+	
      		
         System.out.println("First element:"+obj1.peek()); //null
 	System.out.println("Data: " + obj1);

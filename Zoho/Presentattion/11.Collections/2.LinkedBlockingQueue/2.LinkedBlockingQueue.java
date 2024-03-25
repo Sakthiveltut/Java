@@ -11,7 +11,7 @@ public class ArrayBlockingQueueExample{
 			try{
 				for(int i=1;i<=10;i++){
 					obj1.put(i);
-					System.out.println("put "+i);
+					//System.out.println("put "+i);
 				}
 			}catch(InterruptedException e){
 				e.printStackTrace();	
