@@ -6,5 +6,7 @@ public class For_Each {
         {
             System.out.println(n);
         }
+
     }
+	
 }

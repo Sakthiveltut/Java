@@ -16,5 +16,10 @@ public class Main{
 			if(score > 90)
 				System.out.println("Grade A");
 		}
+
+		
+		
+		/*if(score == 92)
+			int a =10;*/
 	}
 }

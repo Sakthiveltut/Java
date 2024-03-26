@@ -4,17 +4,19 @@ public class Main {
 	Object obj2 = "mosesh";
 	Object obj3 = 'a';
 	Object obj4 = null;
+	Object obj5 = true;
 
 	Integer in = 12;
-
-        String result = switch (obj4) {
+	int age = 21;
+	
+        String result = switch (obj5) {
             case String s -> "String: " + s;
             case Integer i -> "Integer "+i;
             case Double d -> "Double: " + d;
-		case null -> "Object is null";
+	    case null -> "Object is null";
+	    case Boolean bool-> "Boolean"+bool;
             default -> "Unknown object";
         };
-
         System.out.println(result);
     }
 }

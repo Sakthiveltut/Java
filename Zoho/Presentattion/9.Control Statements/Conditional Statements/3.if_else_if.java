@@ -34,7 +34,21 @@ public class Main{
 			}
 		}
 		else if(score <= 50)
-			System.out.println("You are Fail");	
+			System.out.println("You are Fail");
+
+		
+		boolean b = true; 
+		if (b = true) { 
+        	//if (b = false) { 
+            		System.out.println("mosesh"); 
+        	} else { 
+            		System.out.println("rahul"); 
+        	} 	
+		String name = "madan";
+		System.out.println(b = true); 
+		System.out.println(b = false); 
+		System.out.println(score = 20);
+		System.out.println(name = "sakthi");
 			
 	}
 }
