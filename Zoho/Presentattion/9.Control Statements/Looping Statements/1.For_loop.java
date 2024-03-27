@@ -78,13 +78,13 @@ public class For_loop {
 
 		
 
-		/*int i = 10;
+		int i = 10;
 		for (method1();method2(); method1()) {
       			System.out.println("madan");
 			if(i == 12)
 				break;
 			i++;
-   		}*/
+   		}
 
   	}
 
