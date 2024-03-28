@@ -2,17 +2,25 @@ import java.util.concurrent.*;
 import java.util.*;
 
 public class QueueExample {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         
-        ArrayBlockingQueue<Integer> obj1 = new ArrayBlockingQueue<Integer>(11);
-	
+    
+	//ArrayBlockingQueue<Integer> obj1 = new ArrayBlockingQueue<Integer>(11);
+	//LinkedBlockingQueue<Integer> obj1 = new LinkedBlockingQueue<>(11);	//both
+	PriorityBlockingQueue<Integer> obj1 = new PriorityBlockingQueue<>(12);	//unbounded
+	//SynchronousQueue<Integer> obj1 = new SynchronousQueue<>();	//unbounded
+
+	//ConcurrentLinkedQueue<Integer> obj1 = new ConcurrentLinkedQueue<>();	//unbounded
+
 	ArrayBlockingQueue<Integer> obj2 = new ArrayBlockingQueue<Integer>(11);	
 
+	obj1.put(45);
+
 	List<Integer> list1 = new ArrayList<>();
-	
+
 	obj1.addAll(Arrays.asList(345,435)); 
 	obj1.addAll(List.of(345,435)); 
-
+	
 	for(int i=1;i<=6;i++){
 		obj1.add(i);	//IllegalStateException when queue is full
 	}

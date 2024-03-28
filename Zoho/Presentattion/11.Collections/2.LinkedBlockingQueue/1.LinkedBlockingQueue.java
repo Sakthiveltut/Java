@@ -32,7 +32,7 @@ public class QueueExample {
         System.out.println("\npoll() "+obj1.poll()); //null
 	System.out.println("Data: " + obj1);
 	
-	System.out.println("\nremove() "+obj1.remove()); 
+	System.out.println("\nremove() "+obj1.remove());  //NoSuchElementException
 	System.out.println("Data: " + obj1);
 
 	System.out.println("\ncontains() "+obj1.contains(50)); 
@@ -67,10 +67,10 @@ public class QueueExample {
 	System.out.println("\nremoveAll "+obj2.removeAll(obj1)); 
 	System.out.println("Data obj2: " + obj2);
 
+	obj1.addAll(Arrays.asList(3450,4350,50));
+
 	System.out.println("\nretainAll "+obj2.retainAll(obj1)); //common data
 	System.out.println("Data obj2: " + obj2);
-
-	obj1.forEach(element -> System.out.println(element+" "));
 
 	obj1.forEach(element -> System.out.println(element+" "));
 

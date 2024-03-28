@@ -4,14 +4,23 @@ public class SingletonClass
 	{
 		ABC a = ABC.getInstance();
 		a.display();
+	
+		ABC b = ABC.getInstance();
+		b.display();
+
+		ABC c = ABC.getInstance();
+		c.display();
+
+		System.out.println(a+" "+b+" "+c);
+		System.out.println(a.hashCode()+" "+b.hashCode()+" "+c.hashCode());
 	}
 }
 
 class ABC
 {
-	public static ABC obj = null;
+	private static ABC obj;
 	private ABC(){}
-	//this method return object
+
 	public static ABC getInstance()
 	{
 		if(obj == null)

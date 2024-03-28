@@ -3,13 +3,11 @@ public class PriorityExample {
         Thread thread1 = new Thread(new MyRunnable(), "Thread 1");
         Thread thread2 = new Thread(new MyRunnable(), "Thread 2");
 
-        // Set the priority of thread1 to maximum (10)
-        thread1.setPriority(Thread.MAX_PRIORITY);
+        
+        thread1.setPriority(Thread.MAX_PRIORITY);//10
 
-        // Set the priority of thread2 to minimum (1)
-        thread2.setPriority(Thread.MIN_PRIORITY);
+        thread2.setPriority(Thread.MIN_PRIORITY);//1
 
-        // Start the threads
         thread1.start();
         thread2.start();
     }

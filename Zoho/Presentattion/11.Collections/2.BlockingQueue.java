@@ -17,6 +17,7 @@ public class ArrayBlockingQueueExample{
 					//obj1.put(i);
 					obj1.add(i);
 					System.out.println("put "+i);
+					//System.out.println(obj1);
 				}
 			}catch(Exception e){
 				e.printStackTrace();	
@@ -24,11 +25,14 @@ public class ArrayBlockingQueueExample{
 			
 		}).start();
 
+		System.out.println(obj1);
+
 		new Thread(()->{
 			try{
 				for(int i=1;i<=10;i++){
 					//System.out.println("take "+obj1.take());
 					System.out.println("poll "+obj1.poll());
+					//System.out.println(obj1);
 				}
 			}catch(Exception e){
 				e.printStackTrace();	
