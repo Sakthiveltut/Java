@@ -1,31 +1,54 @@
 package LeetCode;
 
-import java.util.Stack;
+import java.util.*;
 
 public class demo1 {
 
     public static void main(String[] args) {
-        Solution1 s = new Solution1();
-        System.out.println(s.isValid("([]{})"));
-    }
-}
-class Solution1 {
-    public boolean isValid(String s) {
-        Stack<Character> stack = new Stack<Character>(); // create an empty stack
-        for (char c : s.toCharArray()) { // loop through each character in the string
-            if (c == '(') // if the character is an opening parenthesis
-                stack.push(')'); // push the corresponding closing parenthesis onto the stack
-            else if (c == '{') // if the character is an opening brace
-                stack.push('}'); // push the corresponding closing brace onto the stack
-            else if (c == '[') // if the character is an opening bracket
-                stack.push(']'); // push the corresponding closing bracket onto the stack
-            else if (stack.isEmpty() || stack.pop() != c) // if the character is a closing bracket
-                // if the stack is empty (i.e., there is no matching opening bracket) or the top of the stack
-                // does not match the closing bracket, the string is not valid, so return false
-                return false;
+
+	String haystack = "sadbutsad", needle = "sad";
+		
+	char haystackChar[] = haystack.toCharArray();
+        char needleChar[] = needle.toCharArray();
+	
+	/*for(char c: needleChar){
+		System.out.println(c);
+	}*/
+        
+
+
+        /*int count = 0;
+        for(int i=0;i<haystackChar.length;i++){
+		System.out.println(haystackChar[i]+" "+ needleChar[count]);
+            while(haystackChar[i] == needleChar[count]){
+                ++count;
+		System.out.println("while "+count);
+		break;
+            }if(haystackChar[i] != needleChar[count]){
+                count = 0;
+            }
         }
-        // if the stack is empty, all opening brackets have been matched with their corresponding closing brackets,
-        // so the string is valid, otherwise, there are unmatched opening brackets, so return false
-        return stack.isEmpty();
+	System.out.println("final count"+count);*/
+	
+
+	
+
+        int count1 = 0, count2 = 0;
+	    System.out.println(haystackChar[count1]+" "+ needleChar[count2]);
+            while(haystackChar[count1] == needleChar[count2]){
+		if(count2<needleChar.length){
+			++count1;
+			++count2;
+		}else{
+			return;
+		}
+		System.out.println("while "+count2);
+            }if(haystackChar[count1] != needleChar[count2]){
+                count1 = 0;
+		++count1;
+            }
+	System.out.println("final count"+count1);
+	
+	
     }
 }
