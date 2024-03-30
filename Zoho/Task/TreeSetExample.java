@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class TreeSetExample {
  public static void main(String[] args) {
   	TreeSet<Object> treeSet = new TreeSet<>();
 	treeSet.add("String"); 

@@ -7,14 +7,15 @@ public class QueueExample {
     
 	//ArrayBlockingQueue<Integer> obj1 = new ArrayBlockingQueue<Integer>(11);
 	//LinkedBlockingQueue<Integer> obj1 = new LinkedBlockingQueue<>(11);	//both
-	PriorityBlockingQueue<Integer> obj1 = new PriorityBlockingQueue<>(12);	//unbounded
+	//PriorityBlockingQueue<Integer> obj1 = new PriorityBlockingQueue<>(12);	//unbounded
 	//SynchronousQueue<Integer> obj1 = new SynchronousQueue<>();	//unbounded
 
-	//ConcurrentLinkedQueue<Integer> obj1 = new ConcurrentLinkedQueue<>();	//unbounded
+	ConcurrentLinkedQueue<Integer> obj1 = new ConcurrentLinkedQueue<>();	//unbounded
 
 	ArrayBlockingQueue<Integer> obj2 = new ArrayBlockingQueue<Integer>(11);	
 
-	obj1.put(45);
+	//obj1.put(45);
+
 
 	List<Integer> list1 = new ArrayList<>();
 
@@ -24,7 +25,7 @@ public class QueueExample {
 	for(int i=1;i<=6;i++){
 		obj1.add(i);	//IllegalStateException when queue is full
 	}
-	obj2.addAll(obj1);
+	//obj2.addAll(obj1);
 
 	//obj1.clear();
 
@@ -49,8 +50,8 @@ public class QueueExample {
 	System.out.println("\nremove(435) "+obj1.remove(435)); 
 	System.out.println("Data: " + obj1);
 
-	System.out.println("\nremainingCapacity() "+obj1.remainingCapacity()); 
-	System.out.println("Data: " + obj1);
+	//System.out.println("\nremainingCapacity() "+obj1.remainingCapacity()); 
+	//System.out.println("Data: " + obj1);
 
         System.out.println("\nisEmpty() " +obj1.isEmpty()); 
 	System.out.println("Data: " + obj1);
@@ -61,13 +62,13 @@ public class QueueExample {
 	System.out.println("\nelement() "+obj1.element()); //NoSuchElementException
 	System.out.println("Data: " + obj1);
 
-	System.out.println("\ndrainTo() "+obj1.drainTo(list1,6));
+	/*System.out.println("\ndrainTo() "+obj1.drainTo(list1,6));
 	System.out.println("list1 Data: " + list1);
 	System.out.println("obj1 Data: " + obj1);
 	
 	System.out.println("\ndrainTo() "+obj1.drainTo(list1));
 	System.out.println("list1 Data: " + list1);
-	System.out.println("obj1 Data: " + obj1);
+	System.out.println("obj1 Data: " + obj1);*/
 
 	System.out.println("\nremoveIf() "+obj1.removeIf(i -> i<3));
 	System.out.println("Data: " + obj1);

@@ -14,6 +14,8 @@ public class mt1{
 	t1.start();
 	
 	t2.start();
+	t1.yield();
+	t1.interrupt();
 
 	System.out.println(t1.isAlive());
 
@@ -31,6 +33,7 @@ class A extends Thread implements Runnable{
 		for(int i=0;i<10;i++){
 		
 			System.out.println("Class A"+i);
+			
 			
 			try{
 				Thread.sleep(1000);

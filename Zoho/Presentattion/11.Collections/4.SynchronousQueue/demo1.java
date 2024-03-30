@@ -1,25 +1,46 @@
 import java.util.concurrent.SynchronousQueue;
 
-public class Main {
+public class SynchronousQueueExample {
     public static void main(String[] args) {
-        // Create a SynchronousQueue
-        SynchronousQueue<Integer> queue = new SynchronousQueue<>();
+        // Creating a SynchronousQueue with fairness set to true
+        SynchronousQueue<Integer> queue = new SynchronousQueue<>(true);
 
-        try {
-            // Put an element into the queue
-            System.out.println("Putting data into the queue...");
-		System.out.println(queue);
-            queue.put(42);
-	    System.out.println(queue);
-            System.out.println("Data has been put into the queue");
+        // Adding elements using offer()
+        System.out.println("Offering 1: " + queue.offer(1));
+        System.out.println("Offering 2: " + queue.offer(2));
 
-            // This line will be reached only after the element is taken from the queue by another thread
-            System.out.println("Main thread continues...");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        // Adding elements using put(), this will block until another thread removes the element
+        new Thread(() -> {
+            try {
+                queue.put(3);
+                System.out.println("Put 3");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
 
+        // Taking elements using take(), this will block until another thread offers the element
+        new Thread(() -> {
+            try {
+                System.out.println("Taking: " + queue.take());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
 
-	
+        // Polling elements using poll()
+        System.out.println("Polling: " + queue.poll());
+
+        // Retrieving the element without removing it using peek()
+        System.out.println("Peek: " + queue.peek());
+
+        // Testing if the queue contains an element
+        System.out.println("Contains 1: " + queue.contains(1));
+
+        // Removing elements using remove()
+        System.out.println("Removing: " + queue.remove(2));
+
+        // Testing if the queue is empty
+        System.out.println("Empty: " + queue.isEmpty());
     }
 }
