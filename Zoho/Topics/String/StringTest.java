@@ -15,6 +15,12 @@ public class StringTest{
 		System.out.println(b instanceof String);
 		System.out.println(c instanceof String);
 		System.out.println(d instanceof String);*/
+
+
+		String a = "Rahul", b = "Mosesh";
+		
+		System.out.println(a+b);
+		//System.out.println(a*b);// error: bad operand types for binary operator '*'
 		
 	}
 }

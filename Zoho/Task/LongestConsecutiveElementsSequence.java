@@ -5,9 +5,9 @@ public class LongestConsecutiveElementsSequence {
 	static ArrayList<Integer> list1 = new ArrayList<>();
 		
 	static ArrayList<Integer> list2 = new ArrayList<>();
+	
 
 	//static int arr[]  = {1,2,-106,3,4,6,7,8,-107,9,56,-102,57,58,1000,-101,-105,-104,-103};
-	
 	//static int arr[]  = {49, 1, 3, 200, 2, 4, 70, 5};
 	static int arr[]  = {49, 1, 3, 6, 2, 4, 70, 50,71,51,72,52,53};
 	//static int arr[]  = {49, 1, 3, 6, 2, 4, 70, 50,71,51,72,52,53,73,74};
@@ -37,14 +37,10 @@ public class LongestConsecutiveElementsSequence {
 			if(count == arr[i]){
 				list1.add(count);
 				++count;
-				//System.out.println(list1);
 			}else{
 				setValue();
-				//System.out.println("count "+count);
 				count = arr[i];
-				//System.out.println("arr "+count);
 				--i;
-				//System.out.println(list1);
 				list1.clear();
 			}	
 			setValue();
@@ -59,7 +55,6 @@ public class LongestConsecutiveElementsSequence {
 				arrLength = list1.size();
 				list2.clear();
 				list2.addAll(list1);
-				//System.out.println(list2);
 		}
 	}
 }

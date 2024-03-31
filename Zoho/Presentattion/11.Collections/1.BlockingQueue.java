@@ -7,10 +7,10 @@ public class QueueExample {
     
 	//ArrayBlockingQueue<Integer> obj1 = new ArrayBlockingQueue<Integer>(11);
 	//LinkedBlockingQueue<Integer> obj1 = new LinkedBlockingQueue<>(11);	//both
-	//PriorityBlockingQueue<Integer> obj1 = new PriorityBlockingQueue<>(12);	//unbounded
+	PriorityBlockingQueue<Integer> obj1 = new PriorityBlockingQueue<>();	//unbounded
 	//SynchronousQueue<Integer> obj1 = new SynchronousQueue<>();	//unbounded
 
-	ConcurrentLinkedQueue<Integer> obj1 = new ConcurrentLinkedQueue<>();	//unbounded
+	//ConcurrentLinkedQueue<Integer> obj1 = new ConcurrentLinkedQueue<>();	//unbounded
 
 	ArrayBlockingQueue<Integer> obj2 = new ArrayBlockingQueue<Integer>(11);	
 
