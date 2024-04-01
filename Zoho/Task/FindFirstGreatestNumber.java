@@ -9,7 +9,9 @@ public class Main{
 		//String num = "589";
 		//String num  = "36798";
 		//String num  = "3679080";
-		String num  = "3619100";
+		//String num  = "3619100";
+
+		String num = 354;
 
 		char numChar[] = num.toCharArray();
 		

@@ -1,25 +1,24 @@
+
 import java.util.concurrent.*;
 
 public class Main {
     public static void main(String[] args) {
         EmergencyWard emergencyWard = new EmergencyWard();
 
-        // Adding patients with different priorities
         emergencyWard.addPatient(new Patient("John", 3));
         emergencyWard.addPatient(new Patient("Alice", 1));
         emergencyWard.addPatient(new Patient("Bob", 2));
 
-        // Treating patients in order of priority
         emergencyWard.treatPatient();
         emergencyWard.treatPatient();
         emergencyWard.treatPatient();
-    }
+	}
 }
 
 
 class Patient implements Comparable<Patient> {
     private String name;
-    private int priority; // Higher priority indicates more urgent cases
+    private int priority; 
 
     public Patient(String name, int priority) {
         this.name = name;
@@ -36,7 +35,6 @@ class Patient implements Comparable<Patient> {
 
     @Override
     public int compareTo(Patient other) {
-        // Patients are compared based on their priority
         return Integer.compare(this.getPriority(), other.getPriority());
     }
 }

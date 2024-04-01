@@ -8,3 +8,19 @@ List<?>
 SynchronousQueue
 
 comparator()
+
+synchronized
+
+PriorityBLockingQueue - Spinlock
+
+	1054209849
+	6jt6wn
+
+
+Bending:
+file name
+change int value
+ordering on blockingqueue
+
+
+
