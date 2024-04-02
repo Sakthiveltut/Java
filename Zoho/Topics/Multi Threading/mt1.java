@@ -9,17 +9,17 @@ public class mt1{
 	B obj2 = new B();
 	Thread t2 = new Thread(obj2);
 	
-	//t1.setPriority(Thread.MAX_PRIORITY);
+	t1.setPriority(Thread.MAX_PRIORITY);
 	//t2.setPriority(Thread.MIN_PRIORITY);
 	t1.start();
 	
 	t2.start();
-	t1.yield();
+	t2.yield();
 	t1.interrupt();
 
 	System.out.println(t1.isAlive());
 
-	//t1.join();
+	t1.join();
 	t2.join();
 
 	System.out.println("class mt");

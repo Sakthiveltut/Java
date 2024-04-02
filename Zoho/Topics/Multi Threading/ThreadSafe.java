@@ -3,14 +3,13 @@ public class ThreadSafe {
         
         Runnable task1 = () -> {
             	Singleton singleton = Singleton.getInstance();
-
-	   	System.out.println(singleton.hashCode());
+				System.out.println(singleton.hashCode());
         };
 
         Thread thread1 = new Thread(task1); 
         Thread thread2 = new Thread(task1);
 		
-		System.out.println(Singleton.class);
+		//System.out.println(Singleton.class);
 
         thread1.start();
         thread2.start();

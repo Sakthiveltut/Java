@@ -18,11 +18,13 @@ public class Main {
             case 1:
                 result=num1+num2;
                 System.out.println("Addition : " +result);
-                break;
+                //continue;
+				break; 
             case 2:
                 result=num1-num2;
                 System.out.println("Subtraction : "+result);
-               	break;
+               	//continue;
+				break;
             case 3:
                 result=num1*num2;
                 System.out.println("Multiplication : "+result);
@@ -31,9 +33,9 @@ public class Main {
                 result=num1/num2;
                 System.out.println("Division : "+result);
                 break;
-            default:
+            /*default:
                 System.out.println("Invalid Selection");
-                break;
+                break;*/
         }
     }
 }

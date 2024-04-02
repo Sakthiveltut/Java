@@ -16,6 +16,7 @@ public class Main {
         String message = switch (choice) {
             case 1:
                	yield "Addition: " + (num1 + num2);
+				//System.out.println("sakthi");
             case 2:
                 yield "Subtraction: " + (num1 - num2);
             case 3:

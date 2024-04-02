@@ -7,8 +7,8 @@ public class Group_switch {
         Scanner in =new Scanner(System.in);
         charValue=in.next().charAt(0);
 
-	if((charValue >= 'a' && charValue <= 'z') || (charValue >= 'A' && charValue <= 'Z')){ 
-        	/*switch (charValue) 
+	//if((charValue >= 'a' && charValue <= 'z') || (charValue >= 'A' && charValue <= 'Z')){ 
+        	switch (charValue) 
         	{
             		case 'a':
             		case 'e':
@@ -24,9 +24,9 @@ public class Group_switch {
                 		break;
             		default:
                 		System.out.println(charValue + " is Consonant");
-        	}*/
+        	}
 
-		switch(charValue)
+		/*switch(charValue)
 		{
 			case 'a','e','i','o','u','A','E','I','O','U': 
 				System.out.println(charValue + " is a Vowels");
@@ -36,6 +36,6 @@ public class Group_switch {
 		}
 
 	}else
-		System.out.println("Enter only character");
+		System.out.println("Enter only character");*/
     }
 }

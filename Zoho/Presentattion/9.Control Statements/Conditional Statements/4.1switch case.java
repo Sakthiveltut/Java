@@ -15,7 +15,7 @@ public class Main {
         num2 = input.nextInt();
         String message = switch (choice) {
             case 1 ->{
-                yield "num1";
+                yield "Addition : " + (num1 + num2);
             }
             case 2 -> {
                 yield "Subtraction : " + (num1 - num2);

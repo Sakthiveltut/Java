@@ -15,8 +15,9 @@ public class  ContinueNestedLoop{
 				for(String student:students)
 				{
 					if(student.equals("Sakthi"))
-						continue c;
+						continue a;
 					System.out.println(student);
+					
 				}
 				System.out.println();
 			}

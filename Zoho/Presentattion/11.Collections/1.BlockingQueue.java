@@ -8,7 +8,7 @@ public class QueueExample {
 	//ArrayBlockingQueue<Integer> obj1 = new ArrayBlockingQueue<Integer>(15);
 	//LinkedBlockingQueue<Integer> obj1 = new LinkedBlockingQueue<>();	//both
 	//PriorityBlockingQueue<Integer> obj1 = new PriorityBlockingQueue<>();	//unbounded
-	SynchronousQueue<Integer> obj1 = new SynchronousQueue<>();	//unbounded
+	//SynchronousQueue<Integer> obj1 = new SynchronousQueue<>();	//unbounded
 
 	//ConcurrentLinkedQueue<Integer> obj1 = new ConcurrentLinkedQueue<>();	//unbounded
 
@@ -18,17 +18,17 @@ public class QueueExample {
 	
 	List<Integer> list1 = new ArrayList<>();
 
-	//obj1.addAll(Arrays.asList(345,435)); 
-	//obj1.addAll(List.of(345,435)); 
+	obj1.addAll(Arrays.asList(345,435)); 
+	obj1.addAll(List.of(345,435)); 
 	
 	
 	for(int i=1;i<=10;i++){
-		//obj1.add(i);	//IllegalStateException when queue is full
+		obj1.add(i);	//IllegalStateException when queue is full
 	}
 	//obj2.addAll(obj1);
 
 	//obj1.clear();
-
+System.out.println("\nremainingCapacity() "+obj1.remainingCapacity()); 
     System.out.println("Original obj1 Data: " + obj1);	
 	System.out.println("Original obj2 Data: " + obj2);
 	
@@ -50,7 +50,7 @@ public class QueueExample {
 	System.out.println("\nremove(435) "+obj1.remove(435)); 
 	System.out.println("Data: " + obj1);
 
-	//System.out.println("\nremainingCapacity() "+obj1.remainingCapacity()); 
+	System.out.println("\nremainingCapacity() "+obj1.remainingCapacity()); 
 	System.out.println("Data: " + obj1);
 
     System.out.println("\nisEmpty() " +obj1.isEmpty()); 
@@ -64,11 +64,11 @@ public class QueueExample {
 
 		System.out.println("list1 Data: " + list1);
 	System.out.println("obj1 Data: " + obj1);
-	//System.out.println("\ndrainTo() "+obj1.drainTo(list1,6));
+	System.out.println("\ndrainTo() "+obj1.drainTo(list1,6));
 	System.out.println("list1 Data: " + list1);
 	System.out.println("obj1 Data: " + obj1);
 	
-	//System.out.println("\ndrainTo() "+obj1.drainTo(list1));
+	System.out.println("\ndrainTo() "+obj1.drainTo(list1));
 	System.out.println("list1 Data: " + list1);
 	System.out.println("obj1 Data: " + obj1);
 

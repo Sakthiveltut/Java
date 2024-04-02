@@ -12,8 +12,8 @@ public class LambdaHolder {
     }
 
     public static void main(String[] args) {
-       
-        DoubleFunction<Double> myLambda = (x) -> x * 2;
+        int i=0;
+        DoubleFunction<Double> myLambda = (x) -> x * i;
 
         
         LambdaHolder holder = new LambdaHolder(myLambda);

@@ -16,7 +16,7 @@ public class Main {
                     default:
                         System.out.println("Invalid section");
                 }
-                break;
+               break;
             case 2:
                 System.out.println("Grade 2");
             default:

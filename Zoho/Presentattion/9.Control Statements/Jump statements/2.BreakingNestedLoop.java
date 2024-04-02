@@ -15,7 +15,7 @@ public class  BreakingNestedLoop{
 				for(String student:students)
 				{
 					System.out.print(student+" ");
-					break c;
+					break b;
 				}
 				System.out.println();
 			}

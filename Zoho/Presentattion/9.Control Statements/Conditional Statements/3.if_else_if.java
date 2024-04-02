@@ -38,8 +38,8 @@ public class Main{
 
 		
 		boolean b = true; 
-		if (b = true) { 
-        	//if (b = false) { 
+		//if (b = true) { 
+        	if (b = false) { 
             		System.out.println("mosesh"); 
         	} else { 
             		System.out.println("rahul"); 
@@ -49,6 +49,7 @@ public class Main{
 		System.out.println(b = false); 
 		System.out.println(score = 20);
 		System.out.println(name = "sakthi");
+		System.out.println(name);
 			
 	}
 }

@@ -18,8 +18,8 @@ public class Main{
 		}
 
 		
-		
-		/*if(score == 92)
-			int a =10;*/
+		int a =10;
+		if(score == 92)
+			a =20;
 	}
 }

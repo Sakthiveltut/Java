@@ -15,12 +15,12 @@ public class For_loop {
 
 		/*for(int i = 1;true; i++) {
       			System.out.println(i);
-   		}
-		for(int i = 1;; i++) {
+   		}*/
+		/*for(int i = 1;; i++) {
       			System.out.println(i);
-   		}
-		for(;;) {
-      			System.out.println(i);
+   		}*/
+		/*for(;;) {
+      			System.out.println(1);
    		}*/
 		
 
@@ -31,41 +31,66 @@ public class For_loop {
    		}*/
 
 
-
-		/*for(int i=1,j=11;i<11 && j<21;i++,j++){
+		/*for(int i=1,j=11;i<11 && j<21;1+i++,j++){  
+			System.out.println(i+" "+j);
+		}
+		for(int i=1,j=11;i<11 && j<21;i+1,j++){  
+			System.out.println(i+" "+j);
+		}
+		for(int i=1,j=11;i<11 && j<21;i++,j++){  
+			System.out.println(i+" "+j);
+		}
+		for(int i=1,j=11;i<11 && j<21;i++,j++){  
 			System.out.println(i+" "+j);
 		}*/
-
-
-		for(int i = 0 ; i <= 10 ; i++);
-
 		
+		/*int i=0;
+		for(i = 0 ; i <= 10 ; i++);*/
+		//for(i; i <= 10 ; i++);//not a statement
+		//for(0 ; i <= 10 ; i++);//not a statement
 
-		/*for (int i = 1; i <= n; i++) {
+		/*for (i = 1; i <= n; ++i) {
+      			System.out.println(i);
+   		}*/
+		
+		
+		/*for (char i = 'A'; i < 70; ++i) {
+      			System.out.println(i);
+   		}*/
+		
+		/*for (boolean i = false; true;) {
       			System.out.println(i);
    		}*/
 		
 
 		/*for (int i = 1; i <= n; i++)
-			int a = 10;
-			//System.out.println(i);
-			//System.out.println(i);*/
-
+			//int a = 10;
+			System.out.println(i);
+			System.out.println(i);*/
 
 		/*int i = 10;
 		for (System.out.println("hello"); i < 11; i++) {
       			System.out.println("zoho");
    		}*/
+		
+		/*int i = 10;
+		for (System.out.println("hello"); i < 11; System.out.println("zoho")) {
+      			System.out.println("zoho");
+   		}*/
 
 
-	        /*//final int a = 1, b = 5; 
-		int a = 1, b = 5; 
+	    final int a = 1, b = 5; 
+		//int a = 1, b = 5; 
   
-        	for (int i = 0; a < b; i++) { 
+        	/*for (int i = 0; a < b; i++) { 
             		System.out.println("Hello"); 
         	} 
-        	System.out.println("Hi");*/ 
-
+        	System.out.println("Hi");*/
+			
+        	for (int i = 0; a > b; i++) { 
+            		System.out.println("Hello"); 
+        	} 
+        	System.out.println("Hi");
 		
 
 		/*int i = 10;

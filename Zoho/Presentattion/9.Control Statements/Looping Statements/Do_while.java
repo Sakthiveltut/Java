@@ -8,8 +8,10 @@ public class Do_while {
         int n=in.nextInt();
         int i=2;
         do {
-            System.out.println(i);
-            i=i+2;
+            System.out.println(i++);
+            //i=i+2;
+			continue;
+			//break;
         }while (i<=n);
     }
 }

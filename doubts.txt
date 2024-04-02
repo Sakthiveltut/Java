@@ -9,13 +9,26 @@ SynchronousQueue
 
 comparator()
 
-synchronized
+blocking queue - synchronized
+yield()
+interupt()
+
+
+
+
+	        final int a = 1, b = 5; 
+		//int a = 1, b = 5; 
+  
+        	for (int i = 0; a > b; i++) { 
+            		System.out.println("Hello"); 
+        	} 
+        	System.out.println("Hi");
+
 
 PriorityBLockingQueue - Spinlock
 
-	1054209849
-	6jt6wn
-
+	1072783690
+	uqpBzG
 
 Bending:
 file name
