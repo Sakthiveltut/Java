@@ -1,21 +1,28 @@
 import java.util.*;
 
-public class Q2{
+public class Q5{
+
 	public static void main(String[] args){
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a letter: ");
-		char letter = sc.next().charAt(0);
+		System.out.println();
 		
+		Scanner sc = new Scanner(System.in);
+		char letter = sc.next().charAt(0);
 		int iteration = 0;
+		
 		if(Character.isUpperCase(letter)){
-			iteration = 91;
+			iteration = 64;
 		}else if(Character.isLowerCase(letter)){
-			iteration = 123;
+			iteration = 96;
 		}
-		for(char i=letter;i<iteration;i++){
-			System.out.println(i);
-		}		
+		
+		for(char i=letter;i>iteration;i--){
+			for(char j=i;j>iteration;j--){
+				System.out.print(i);
+			}
+			System.out.println();
+		}
+		
 	}
 }
 

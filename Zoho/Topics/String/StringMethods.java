@@ -96,16 +96,14 @@ public class Main{
 		CharSequence temp = temp2.subSequence(5,12);
 		System.out.println("subSequence() "+temp );
 		
-	System.out.println("toUpperCase() "+temp2.toUpperCase());
-	System.out.println("toLowerCase() "+temp2.toLowerCase());
-
-		
+		System.out.println("toUpperCase() "+temp2.toUpperCase());
+		System.out.println("toLowerCase() "+temp2.toLowerCase());
 		
 
         System.out.println("Original length: " + multilineString.length());
         System.out.println("Length after stripIndent(): " + multilineString.stripIndent().length());
-    
-
+		
+		
 		System.out.println("\ncodePoints() "+sentence.codePoints());
 		System.out.println("chars() "+sentence.chars());	
 		System.out.println("codePointCount() "+sentence.codePointCount(0,5));		

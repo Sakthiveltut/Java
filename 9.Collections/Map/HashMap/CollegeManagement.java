@@ -14,8 +14,8 @@ public class CollegeManagement {
         int studentId = sc.nextInt();
 
         if (studentMap.containsKey(studentId)) 
-	{
-           Student student = studentMap.get(studentId);
+		{
+			Student student = studentMap.get(studentId);
 
             System.out.println("Student Details:");
             System.out.println("ID: " + studentId);
