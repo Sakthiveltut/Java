@@ -27,8 +27,8 @@ class Dog extends Animal {
     String name = "Dog";
 
     Dog() {
-        super(); 
-	//super("Dog"); //call to super must be first statement in constructor
+        //super(); 
+	super("Dog"); //call to super must be first statement in constructor
 	System.out.println(super.name);
         System.out.println("Dog constructor");
     }

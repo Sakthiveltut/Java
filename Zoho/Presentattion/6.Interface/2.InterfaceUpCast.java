@@ -1,8 +1,10 @@
 public class InterfaceUpCast {
     public static void main(String[] args) {
         A obj = new B();
+		B obj1 = (B)obj; 
+		System.out.println(obj1);
         obj.print();
-	obj.method1();
+		obj.method1();
 	//obj.method2(); //illegal static interface method call
 	//A a =new A();  //cannot be instantiated
     }

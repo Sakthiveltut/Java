@@ -11,6 +11,7 @@ class Animal {
     static String name = "Animal";
 
     Animal() {
+		super();
         System.out.println("Animal constructor");
     }
     Animal(String a) {

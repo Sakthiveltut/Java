@@ -35,6 +35,7 @@ interface B extends A{
 	}
 }
 interface C extends A{
+		void abstractMethod2();
 	void abstractMethod3();
 	default void method3(){
 		System.out.println("C");
