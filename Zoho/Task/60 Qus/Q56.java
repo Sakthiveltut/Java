@@ -21,15 +21,13 @@ public class Main {
 				System.out.print(" ");
 			}
 			for(int j=1;j<=i;j++){
-				if(count>num){
+				
+				if(count>num)
 					break a;
-				}
-				if(String.valueOf(count).length() == 1){
-					System.out.print(" "+count+" ");
-				}else{
-					System.out.print(count+" ");
-				}
-				count++;
+				if(count<10)
+					System.out.print(" "+count+++" ");
+				else
+					System.out.print(count+++" ");
 			}
 			System.out.println();
 		}

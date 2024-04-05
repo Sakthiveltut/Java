@@ -11,14 +11,9 @@ class A
 {  
 	
 	A(){
-		this(10); 		
+		//this(10); 		
 		System.out.println("This Called Default constructor");
 		
-	}
-	A(int x)
-	{  
-		//this(); 
-		System.out.println(x);  
 	}
 	
 }  
