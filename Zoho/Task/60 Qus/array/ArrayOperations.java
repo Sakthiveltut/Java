@@ -1,8 +1,9 @@
+package array;
 import java.util.*;
 
-public class SortedArray{
+public class ArrayOperations{
 
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		
 		//int arr[] = {109,345,6675,234,5465,12,345,54,67,645,65,89};
 		//int arr[] = {43,34,56,12,67,87};
@@ -15,7 +16,7 @@ public class SortedArray{
 
 		sortArray(arr,"decending");
 		
-	}	
+	}*/	
 	static int[] sortArray(int[] arr,String order){
 		if(order == "ascending" || order == "decending"){
 			for(int h=0;h<arr.length;h++){
@@ -26,7 +27,7 @@ public class SortedArray{
 						arr[i] = arr[position]-arr[i];
 						arr[position] = arr[position]-arr[i];
 					}
-					System.out.println(i+" "+Arrays.toString(arr));
+					//System.out.println(i+" "+Arrays.toString(arr));
 				}
 			}
 		}else{

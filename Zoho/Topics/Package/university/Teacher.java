@@ -1,5 +1,5 @@
 package university;
-import university.Student;
+//import university.Student;
 
 public class Teacher {
     public static void main(String[] args) {
