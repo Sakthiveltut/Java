@@ -5,36 +5,4 @@ List<? super Number>
 List<?>
 
 
-SynchronousQueue
-
-comparator()
-
-blocking queue - synchronized
-yield()
-interupt()
-
-
-
-
-	        final int a = 1, b = 5; 
-		//int a = 1, b = 5; 
-  
-        	for (int i = 0; a > b; i++) { 
-            		System.out.println("Hello"); 
-        	} 
-        	System.out.println("Hi");
-
-
-PriorityBLockingQueue - Spinlock
-
-	
-	1056695068
-	Q1JV3H
-
-Bending:
-file name
-change int value
-ordering on blockingqueue
-
-
 
