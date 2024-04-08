@@ -10,40 +10,62 @@ public class Main{
 		System.out.println("Enter a String2: ");
 		String str2 = sc.nextLine();
 		
-		//System.out.println(isSubString(str1,str2));
-		System.out.println(str1.indexOf(str2));
+		System.out.println(isSubString(str1,str2));
+		//System.out.println(str1.indexOf(str2));
 	}
-	static int isSubString(String str1, String str2){
+	/*static int isSubString(String str1, String str2){
 		
 		char str1Array[] = str1.toCharArray();
 		char str2Array[] = str2.toCharArray();
 		
 		int count = 0, count1 = 0, count2 = str2Array.length-1;
 		for(int i=0;i<str1Array.length;i++){
-			if(str1Array[i]==str2Array[count]){
-				count++;
-			}
-			if(count == str2.length()){
-				count1=i;
-				while(true){
-					if(count2>=0){
-						System.out.println(count2+" "+str1Array[count1]+" "+str2Array[count2]);
-						if(str1Array[count1]==str2Array[count2]){
-							--count1;
-							--count2;
+			if(count<str2Array.length){
+				System.out.println(str1Array[i]+" "+str2Array[count]);
+				if(str1Array[i]==str2Array[count]){
+					count++;
+				}
+				if(count == str2.length()){
+					count1=i;
+					while(true){
+						if(count2>=0){  
+							System.out.println(count2+" "+str1Array[count1]+" "+str2Array[count2]);
+							if(str1Array[count1]==str2Array[count2]){
+								--count1;
+								--count2;
+							}else
+								break;
+						}else if(count2 == -1){
+							return i-(str2.length()-1);
 						}else
 							break;
-					}else if(count2 == -1){
-						return i-(str2.length()-1);
-					}else
-						break;
+					}
+					count=0;
 				}
 			}
 		}
 		return -1;
+	}*/
+	
+	static int isSubString(String str1, String str2){
+		
+		//sasaskthi-sask
+		char str1Array[] = str1.toCharArray();
+		char str2Array[] = str2.toCharArray();
+		int count1=0, count2=0 ;
+		for(int i=0;i<str1Array.length;i++){
+			if(str1Array[i]==str2Array[count2]){
+				count1=i;
+				while(count1<str1Array.length && count2<str2Array.length && str1Array[count1]==str2Array[count2]){
+					count1++;
+					count2++;
+				}
+			}else
+				count2=0;
+			if(str2Array.length == count2){
+				return count1-str2.length();
+			}
+		}
+		return -1;
 	}
-	
-	
-	
 }
-

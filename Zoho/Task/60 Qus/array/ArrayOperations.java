@@ -9,7 +9,7 @@ public class ArrayOperations{
 		//int arr[] = {43,34,56,12,67,87};
 		//int arr[] = {9,2,1,4,5,};
 		//int arr[] = {0,9,2,4,5,1,1,45,4,8,8,8,8,8,};
-		int arr[] = {9,2,4,5,1,1,45,4,8,8,8,8,8,0};
+		//int arr[] = {9,2,4,5,1,1,45,4,8,8,8,8,8,0};
 		//int arr[] = {9,2,4,5,1,1,45,4,8,8,8,8,8};
 		//int arr[] = {9,2,4,5,1,9,2,4,5,1};
 		
@@ -17,6 +17,9 @@ public class ArrayOperations{
 		//int arr[] = {1,2,3,4,5,6,7,8};
 		//int arr[] = {0,00,1,1,3,3,3,3,5,5,5,};
 		//int arr[] = {0,00,0,0,00,0,0,};
+		
+				int arr[] = {1,1,2,2,2,3,3,3,3,4,4};
+
 
 
 
@@ -54,7 +57,7 @@ public class ArrayOperations{
 					zero=true;
 				}
 				if(arr[i]==temp[j]){
-					//System.out.print(arr[i]+" "); //print duplicates //0 issue
+					System.out.print(arr[i]+" "); //print duplicates //0 issue
 					break;
 				}
 				if(j==i){
@@ -68,7 +71,5 @@ public class ArrayOperations{
 		}
 		return result;
 	}
-	
-
 }
 
