@@ -9,7 +9,8 @@ public class ArrayBlockingQueueExample{
 		//PriorityBlockingQueue<Integer> obj1 = new PriorityBlockingQueue<>();	//unbounded
 		//SynchronousQueue<Integer> obj1 = new SynchronousQueue<>();	//unbounded
 
-		ConcurrentLinkedQueue<Integer> obj1 = new ConcurrentLinkedQueue<>();	//unbounded
+		//ConcurrentLinkedQueue<Integer> obj1 = new ConcurrentLinkedQueue<>();	//unbounded
+		ConcurrentLinkedDeque<Integer> obj1 = new ConcurrentLinkedDeque<>();	//unbounded
 		
 		new Thread(()->{
 			try{
@@ -34,6 +35,30 @@ public class ArrayBlockingQueueExample{
 					//System.out.println(obj1);
 					//System.out.println("take "+obj1.take());
 					System.out.println("poll "+obj1.poll());
+				}
+			}catch(Exception e){
+				e.printStackTrace();	
+			}
+			
+		}).start();
+		
+		
+		new Thread(()->{
+			try{
+				for(int i=1;i<=30;i++){
+					obj1.addLast(i);
+					System.out.println("addLast "+i);
+				}
+			}catch(Exception e){
+				e.printStackTrace();	
+			}
+			
+		}).start();
+		
+		new Thread(()->{
+			try{
+				for(int i=1;i<=30;i++){
+					System.out.println("pollLast "+obj1.pollLast());
 				}
 			}catch(Exception e){
 				e.printStackTrace();	

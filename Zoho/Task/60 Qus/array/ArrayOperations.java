@@ -46,7 +46,7 @@ public class ArrayOperations{
 		return arr;
 	}
 	
-	static int[] removeDuplicates(int[] arr){
+	/*static int[] removeDuplicates(int[] arr){
 		int[] temp = new int[arr.length];
 		int count =0;
 		boolean zero=false;
@@ -57,7 +57,7 @@ public class ArrayOperations{
 					zero=true;
 				}
 				if(arr[i]==temp[j]){
-					System.out.print(arr[i]+" "); //print duplicates //0 issue
+					//System.out.print(arr[i]+" "); //print duplicates 0 issue
 					break;
 				}
 				if(j==i){
@@ -68,6 +68,32 @@ public class ArrayOperations{
 		int result[] = new int[count];
 		for(int i=0;i<result.length;i++){
 			result[i] = temp[i];
+		}
+		return result;
+	}*/
+	static int[] removeDuplicates(int[] arr){
+		int[][] temp = new int[2][];
+		int count =0;
+		boolean zero=false;
+		for(int i=0;i<arr.length;i++){
+			for(int j=0;j<=i;j++){
+				if(arr[i]==0 && zero==false){
+					temp[0][count++]=arr[i];
+					zero=true;
+				}
+				if(arr[i]==temp[0][j]){
+					//System.out.print(arr[i]+" "); //print duplicates 0 issue
+					break;
+				}
+				if(j==i){
+					temp[0][count++]=arr[i];
+				}
+			}
+		}
+		System.out.println(Arrays.deepToString(temp));
+		int result[] = new int[count];
+		for(int i=0;i<result.length;i++){
+			result[i] = temp[0][i];
 		}
 		return result;
 	}
