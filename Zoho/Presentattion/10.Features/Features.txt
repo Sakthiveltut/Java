@@ -1,0 +1,61 @@
+Features of Java:
+
+1) Java is Simple.
+Syntax is derived from C and C++.
+pointers,
+
+2) Java is Object Oriented Programming Language Java 8 - Functional Programming - Lambda Expressions
+Multiparadigm Programming - JavaScript, Python
+
+Paradigms - Idea
+OOP
+Functional Programming
+Modular Programming
+Procedure Oriented Programming
+
+3. Java is Robust:
+Robust - powerful.
+Error Prone Coding
+Compile Time
+Run Time
+==> Compile Time Error Checking Mechanisms
+==> Excellent Memory Management Systems Automatic Garbage Collection
+==> Exception Handling
+
+4. Java is Platform Independent:
+Platform - Combination of H/w and S/w Processor and OS (Win 7, Linux Mint)
+Independent - File Extension --> .mkv, .mp4, .doc
+first.java(Programming Language) - Compiler Byte Code (first.class)
+--> OS -->
+Machine Language (0,1s)
+
+JDK + JRE(JVM) --> Java Developer
+JRE --> Java Application User
+
+JDK is Platform Independent.(.java --> .class - Common for all platforms) (Compiler)
+JRE(JVM) is platform Dependent. (.class - binary - Specific to each platform)
+.class - binary(0,1s) - Conversion - Just In Time(JIT) Compiler
+Write Once Run Anywhere (WORA)
+
+
+5. Java is Secured Language: 
+Tamper free coding
+Null Interaction with OS
+
+6. Multithreaded Language:
+Multithreading is subset of Multitasking
+Simultaneous Execution of multiple programs
+
+7. Architecture Neutral:
+Compiler --> Byte Code 64 Bit 32 Bit
+
+8. Java is portable.
+
+9.java is high performance language.(two level translation)
+
+JDK --> .java --> .class
+.class --> binary
+
+10. Distributed:
+Through TCP/IP --> Special Libraries
+We can run Java programs in Computer Networks.

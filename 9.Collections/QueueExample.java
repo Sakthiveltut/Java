@@ -3,14 +3,22 @@ import java.util.*;
 public class QueueExample {
     public static void main(String[] args) {
         
-        Queue<Integer> queue = new LinkedList<>();
+    Queue<Integer> queue = new LinkedList<>();
+    Deque<Integer> deque = new LinkedList<>();
+
 	
 	Queue<Integer> queue1 = new LinkedList<>();	
-	
+
 	for(int i=1;i<=10;i++){
 		queue.add(i);	
 	}
-	queue1.addAll(Arrays.asList(345,435));
+	deque.addAll(queue);
+	System.out.println(deque);
+	deque.pollFirst();
+	deque.poll();
+	System.out.println(deque);
+	
+	/*queue1.addAll(Arrays.asList(345,435));
 	queue1.addAll(queue);
 	
 	//queue1.addAll(queue);
@@ -39,7 +47,7 @@ public class QueueExample {
 	//System.out.println("First element: "+pqueue.add(1)); //NoSuchElementException
 	System.out.println("Data q1: " + queue1);
 	
-	
+	*/
 	
     }
 }

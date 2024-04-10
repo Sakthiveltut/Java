@@ -1,14 +1,14 @@
 import java.util.regex.*;
 
-public class regex1{
+public class Regex1{
 
 	public static void main(String[] args){
 	
 	String str = "welcome to java programming";
-
-	//Pattern p = Pattern.compile("^java"); check starting word
-	//Pattern p = Pattern.compile("java$"); check ending word
-	Pattern p = Pattern.compile("w|j"); //check ending word
+	Pattern p = Pattern.compile("^java"); //check starting word
+	System.out.println(p);
+	//Pattern p = Pattern.compile("java$"); //check ending word
+	//Pattern p = Pattern.compile("w|j"); //check ending word
 
 	//"[abc]" - check every character
 	//"[^ab]" - except a and b
@@ -38,6 +38,5 @@ public class regex1{
 		System.out.println("start "+m.start()+"end "+m.end());
 		
 	}
-
 	}
 }
