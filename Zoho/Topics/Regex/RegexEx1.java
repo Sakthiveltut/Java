@@ -19,19 +19,21 @@ public class RegexEx1{
 		//Pattern p = Pattern.compile("[0-9]");
 		Pattern p = Pattern.compile("[^a-zA-z0-9]");
 		
-		
-		
-		
-		
 		Matcher m = p.matcher(str);
 		
 		//System.out.println(p);
 		//System.out.println(m);
-		//System.out.println(m.group());
+		System.out.println(m.find());
+		System.out.println(m.group());
 
 		while(m.find()){
 			System.out.println(m.group());
 			//System.out.println(m.start()+" "+m.end());
 		}
+		
+		System.out.println(Pattern.matches(".s","as"));
+		System.out.println(Pattern.matches("as","as"));
+		System.out.println(Pattern.matches(".*hello.*","hello mosesh"));
+		System.out.println(Pattern.matches(".sakthi*.","hello mosesh"));
 	}
 }
