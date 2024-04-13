@@ -3,7 +3,7 @@ import java.util.regex.Matcher;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Ex4{
+public class Ex6{
 	public static void main(String[] args) {
 		String str = "abbaa bbbaaa bbbbaaaaa bbbbbb abababa www.mosesh.com";
 

@@ -4,5 +4,8 @@ public class Q12 {
 		System.out.print('.');
 		System.out.print('5');
 		System.out.print('0');
+		
+		System.out.printf("%.2f",7.50);
+
 	}
 }

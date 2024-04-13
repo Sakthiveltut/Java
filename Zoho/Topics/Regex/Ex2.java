@@ -8,7 +8,7 @@ public class Ex2{
 		//Pattern p = Pattern.compile("\\S"); //except space
 		//Pattern p = Pattern.compile("\\d"); //digit
 		//Pattern p = Pattern.compile("\\D"); //except digit
-		//Pattern p = Pattern.compile("\\w"); //alphabets and number
+		Pattern p = Pattern.compile("\\w"); //alphabets and number
 		//Pattern p = Pattern.compile("\\W"); //except alphabets and number
 		
 		//Pattern p = Pattern.compile("\\bTamil");
@@ -21,7 +21,7 @@ public class Ex2{
 		//Pattern p = Pattern.compile("\\BTamil\\B");
 		//Pattern p = Pattern.compile("Tamil\\B");
 		//Pattern p = Pattern.compile(".");
-		Pattern p = Pattern.compile("\\.");
+		//Pattern p = Pattern.compile("\\.");
 		//Pattern p = Pattern.compile("^.");
 		//Pattern p = Pattern.compile(".$");
 

@@ -24,7 +24,7 @@ public class Ex4{
 	static void checkMobileNo(String mobile){
 	//Pattern p=Pattern.compile("^[+]91[6-9](\\d{9})$");
 	//Pattern p=Pattern.compile("^[+]{1}[91]{2}[6-9]{1}(\\d{9})$");
-	Pattern p=Pattern.compile("^[+91]{3}[6-9]{2}(\\d{9})$");
+	Pattern p=Pattern.compile("\\b+91[6-9](\\d{9})\\b");
 		Matcher m=p.matcher(mobile);
 		
 		if(m.find()){
