@@ -6,9 +6,8 @@ public class template{
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a number: ");
-		int num = sc.nextInt();
+		String input = sc.next();
 		
-		System.out.println();			
+		System.out.println(input);			
 	}
 }
-

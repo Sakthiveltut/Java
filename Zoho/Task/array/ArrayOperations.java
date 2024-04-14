@@ -21,11 +21,13 @@ public class ArrayOperations{
 		int arr[] = {1,1,2,2,2,3,3,3,3,4,4};
 
 		//sortArray(arr,"decending");
-		System.out.println(Arrays.toString(removeDuplicates(arr)));
+		//System.out.println(Arrays.toString(removeDuplicates(arr)));
 		//System.out.println(arr.length);
+		
+		System.out.println(Arrays.toString(getValues()));
 	}
-	static int[] sortArray(int[] arr,String order){
-		if(order.equals("ascending") || order"decending"){
+	public static int[] sortArray(int[] arr,String order){
+		if(order.equals("ascending") || order.equals("decending")){
 			for(int h=0;h<arr.length;h++){
 				int position = h;
 				for(int i=0;i<arr.length;i++){
@@ -34,7 +36,6 @@ public class ArrayOperations{
 						arr[i] = arr[position]-arr[i];
 						arr[position] = arr[position]-arr[i];
 					}
-					//System.out.println(i+" "+Arrays.toString(arr));
 				}
 			}
 		}else{
@@ -43,7 +44,7 @@ public class ArrayOperations{
 		return arr;
 	}
 	
-	static int[] removeDuplicates(int[] arr){
+	public static int[] removeDuplicates(int[] arr){
 		int[] temp = new int[arr.length];
 		int count =0;
 		boolean zero=false;
@@ -67,6 +68,30 @@ public class ArrayOperations{
 			result[i] = temp[i];
 		}
 		return result;
+	}
+	
+	public static int[] getValues() {
+		Scanner sc = new Scanner(System.in);
+		int count = 0,temp[],i=0;
+		int arr[] = new int[count];
+		String str = "";
+		System.out.println("Enter a value('break' to exit): ");
+		while(count>=0){
+			str = sc.next();
+			if(str.equals("break"))
+				return arr;
+			else if(str.matches("[0-9]+")){
+				temp = arr;
+				arr = new int[++count];
+				for(int j=0;j<temp.length;j++){
+					arr[j]=temp[j];
+				}
+				arr[i++] = Integer.parseInt(str);
+			}
+			else
+				System.out.println("Invalid input.");
+		}
+		return arr;
 	}
 }
 
