@@ -18,13 +18,13 @@ public class ArrayOperations{
 		//int arr[] = {0,00,1,1,3,3,3,3,5,5,5,};
 		//int arr[] = {0,00,0,0,00,0,0,};
 		
-		int arr[] = {1,1,2,2,2,3,3,3,3,4,4};
+		//int arr[] = {1,1,2,2,2,3,3,3,3,4,4};
 
 		//sortArray(arr,"decending");
 		//System.out.println(Arrays.toString(removeDuplicates(arr)));
 		//System.out.println(arr.length);
 		
-		System.out.println(Arrays.toString(getValues()));
+		//System.out.println(Arrays.toString(getValues()));
 	}
 	public static int[] sortArray(int[] arr,String order){
 		if(order.equals("ascending") || order.equals("decending")){
@@ -70,7 +70,7 @@ public class ArrayOperations{
 		return result;
 	}
 	
-	public static int[] getValues() {
+	public static int[] getValues(){
 		Scanner sc = new Scanner(System.in);
 		int count = 0,temp[],i=0;
 		int arr[] = new int[count];
@@ -80,7 +80,7 @@ public class ArrayOperations{
 			str = sc.next();
 			if(str.equals("break"))
 				return arr;
-			else if(str.matches("[0-9]+")){
+			try{
 				temp = arr;
 				arr = new int[++count];
 				for(int j=0;j<temp.length;j++){
@@ -88,8 +88,9 @@ public class ArrayOperations{
 				}
 				arr[i++] = Integer.parseInt(str);
 			}
-			else
+			catch(Exception e){
 				System.out.println("Invalid input.");
+			}
 		}
 		return arr;
 	}

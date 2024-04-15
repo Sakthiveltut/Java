@@ -8,6 +8,7 @@ public class template{
 		System.out.println("Enter a number: ");
 		String input = sc.next();
 		
-		System.out.println(input);			
+		int a = Integer.parseInt("-1");
+		System.out.println(a);			
 	}
 }
