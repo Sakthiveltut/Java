@@ -7,11 +7,11 @@ public class Q3{
 		int temp1=0, temp2=0;
 		while(num>0){
 			temp1 = num%10;
-			temp2 = temp2 + temp1*10;
+			temp2 = temp1 + temp2*10;
 			num = num/10;
 		}
-		int temp3 = temp2/10;
+		//int temp3 = temp2/10;
 		//int result = num-temp3;
-		System.out.println(temp3);
+		System.out.println(temp2);
 	}
 }

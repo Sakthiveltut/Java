@@ -5,10 +5,12 @@ public class Q23{
 	public static void main(String[] args){
 
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a value: ");
 		//int arr[][] = new int[3][3];
 		
-		int arr[][] = {{1,2,3},{4,5,6},{7,8,9}};
-		int arr1[][] = new int[3][3];
+		//int arr[][] = {{1,2,3},{4,5,6},{7,8,9}};
+		int arr[][] = new int[4][4];
+		int arr1[][] = new int[4][4];
 		
 		try{
 			for(int i=0;i<arr.length;i++){
