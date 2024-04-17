@@ -5,7 +5,7 @@ class AnonymousClass  {
 		//s.method2();
 		//s.method1();
 		Father f = new Father(){};
-		f.method();
+		//f.method();
 	}
 }   
 interface GrandFather{

@@ -61,6 +61,5 @@ public class Q47{
 			}
 			System.out.println();
 		}
-
 	}
 }
