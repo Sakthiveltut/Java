@@ -11,6 +11,8 @@ public class NestedTry{
 				name.length();
 			}catch(NullPointerException e){
 				System.out.println(e);			
+			}finally{
+				System.out.println("inner finally");
 			}
 			
 		}catch(ArrayIndexOutOfBoundsException e){
@@ -19,6 +21,8 @@ public class NestedTry{
 			System.out.println(e);
 		}catch(Exception e){
 			System.out.println(e);
+		}finally{
+				System.out.println("outer finally");
 		}
 	}
 }

@@ -75,7 +75,7 @@ public class ArrayOperations{
 		int count = 0,temp[],i=0;
 		int arr[] = new int[count];
 		String str = "";
-		System.out.println("Enter a value('break' to exit): ");
+		System.out.println("('break' to exit): ");
 		while(count>=0){
 			str = sc.next();
 			if(str.equals("break"))

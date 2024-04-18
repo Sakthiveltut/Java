@@ -11,6 +11,7 @@ public class CustomException{
 			
 			if(balance<withdrawAmount)
 				throw new InsufficientFundException(withdrawAmount-balance);
+				//throw new Exception("withdrawAmount-balance");
 			else
 				System.out.println("Amount debitted");
 		}catch(InputMismatchException e){

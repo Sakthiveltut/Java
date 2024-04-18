@@ -7,7 +7,8 @@ public class Q54{
 	public static void main(String[] args){
 		
 		//int arr[] = {9,8,7,6,5,4,3,2,1};
-		int arr[] = {13,2,4,15,12,10,5};
+		//int arr[] = {13,2,4,15,12,10,5};
+		int arr[] = {1,1,1,1,0,0,0,0,0};
 		int mid = arr.length/2;
 		
 

@@ -1,20 +1,33 @@
 class ConstructorExample
 {  
+	ConstructorExample(String name){
+		System.out.println(name);
+	}
 	public static void main(String args[])
 	{  
-		//A a=new A(10); 
-		A a1=new A();   //error when default constructor 
-		 
+		//Student s1 = new Student();
+		Student s2 = new Student("mosesh", 21);
 	}
-	}
-class A
+}
+class Student 
 {  
+	String name;
+	int age;
+	/*Student(){
+		System.out.println("default");
+	}*/
 	
-	A(){
-		//this(10); 		
-		System.out.println("This Called Default constructor");
-		
+	Student(String name){
+		System.out.println(name);
 	}
 	
+	Student(String name, int age){
+		super()
+		//super("sakthi");
+		this.name = name;	
+		this.age = age;
+		System.out.println("Name: "+name);
+		System.out.println("Age: "+age);
+	}
 }  
  

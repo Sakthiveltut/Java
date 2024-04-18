@@ -6,20 +6,20 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.StringTokenizer;
 
-public class Ex4{
-	public static void main(String[] args)throws FileNotFoundException{
+public class MobileNo{
+	public static void main(String[] args){
 		//File file = new File("D:\\Sakthi\\Github\\Java\\Zoho\\Topics\\Regex\\mobileno.txt");
-		/*File file = new File("D:/Sakthi/Github/Java/Zoho/Topics/Regex/mobileno.txt");
+		
+		File file = new File("D:/Sakthi/Github/Java/Zoho/Topics/Regex/Tasks/mobileno.txt");
 		Scanner sc = new Scanner(file);
 		while(sc.hasNext()){
 			String word = sc.next();
 			int index = word.lastIndexOf(":");
 			checkMobileNo(word.substring(index+1));
-		}*/
-
-		Scanner sc = new Scanner(System.in);
+		}
+		/*Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a Mobile No: ");
-		checkMobileNo(sc.next());
+		checkMobileNo(sc.next());*/
 	}
 	static void checkMobileNo(String mobile){
 	//Pattern p=Pattern.compile("^[+]91[6-9](\\d{9})$");
