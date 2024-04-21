@@ -12,16 +12,16 @@ public class ArrayOperations{
 		//int arr[] = {9,2,4,5,1,1,45,4,8,8,8,8,8,0};
 		//int arr[] = {9,2,4,5,1,1,45,4,8,8,8,8,8};
 		//int arr[] = {9,2,4,5,1,9,2,4,5,1};
-		
 		//int arr[] = {9,2,4,5,1,1,00,9,9,2,4,5,1};
 		//int arr[] = {1,2,3,4,5,6,7,8};
 		//int arr[] = {0,00,1,1,3,3,3,3,5,5,5,};
 		//int arr[] = {0,00,0,0,00,0,0,};
+		int arr[] = {1,1,2,2,2,3,3,3,3,4,4};
 		
-		//int arr[] = {1,1,2,2,2,3,3,3,3,4,4};
 
 		//sortArray(arr,"decending");
 		//System.out.println(Arrays.toString(removeDuplicates(arr)));
+		System.out.println(Arrays.toString(removeDuplicates(arr)));
 		//System.out.println(arr.length);
 		
 		//System.out.println(Arrays.toString(getValues()));
@@ -44,7 +44,17 @@ public class ArrayOperations{
 		return arr;
 	}
 	
-	public static int[] removeDuplicates(int[] arr){
+		/*for(int i=0;i<arr.length;i++){
+			for(int j=i+1;j<arr.length;j++){
+				if(arr[i]<arr[j]){
+					arr[i]=arr[i]+arr[j];
+					arr[j]=arr[i]-arr[j];
+					arr[i]=arr[i]-arr[j];
+				}
+			}
+		}*/
+	
+	/*public static int[] removeDuplicates(int[] arr){
 		int[] temp = new int[arr.length];
 		int count =0;
 		boolean zero=false;
@@ -56,6 +66,26 @@ public class ArrayOperations{
 				}
 				if(arr[i]==temp[j]){
 					//System.out.print(arr[i]+" "); //print duplicates 0 issue
+					break;
+				}
+				if(j==i){
+					temp[count++]=arr[i];
+				}
+			}
+		}
+		int result[] = new int[count];
+		for(int i=0;i<result.length;i++){
+			result[i] = temp[i];
+		}
+		return result;
+	}*/
+	
+	public static int[] removeDuplicates(int[] arr){
+		Integer[] temp = new Integer[arr.length];
+		int count =0;
+		for(int i=0;i<arr.length;i++){
+			for(int j=0;j<=i;j++){
+				if(temp[j]!=null && arr[i]==temp[j]){
 					break;
 				}
 				if(j==i){
@@ -94,5 +124,6 @@ public class ArrayOperations{
 		}
 		return arr;
 	}
+	
 }
 

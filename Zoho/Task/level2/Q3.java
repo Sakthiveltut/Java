@@ -40,7 +40,7 @@ public class Q3{
 		String temp[] = new String[arr.length];
 		for(int i=0;i<arr.length;i++){
 			for(int j=0;j<=i;j++){
-				if(i!=j && arr[i].equals(temp[j])){
+				if(arr[i].equals(temp[j])){
 					break;
 				}
 				if(j==i){

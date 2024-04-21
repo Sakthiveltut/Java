@@ -13,7 +13,6 @@ public class Ex8{
 		//Pattern p =Pattern.compile("(?:https?://)?(www\\.)?example\\.com");
 		//Pattern p =Pattern.compile("(?i)example");
 		
-		
 		//Pattern pattern = Pattern.compile("(?i)example");
         
         //Pattern pattern = Pattern.compile("(?i:(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec))");

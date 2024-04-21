@@ -1,4 +1,5 @@
 package level2;
+
 import java.util.Scanner;
 import java.util.Arrays;
 import array.ArrayOperations;
@@ -17,19 +18,23 @@ public class Q39{
 		
 		System.out.println(Arrays.toString(arr));
 		int sum=0, pos=0;
+		String result = "";
 		
 		for(int h=0;h<height.length;h++){
 			for(int i=pos;i<arr.length;i++){
+				result+=arr[i]+" ";
+				//System.out.print(result);
+				sum+=arr[i];
 				if(height[h]==sum){
-					pos=i;
-					System.out.print("& ");
+					pos=i+1;
+					System.out.print(i==arr.length-1?result:result+"& ");
 					break;
-				}else{
-					System.out.print(arr[i]+" ");
-					sum+=arr[i];
+				}else if(i==arr.length-1){
+					System.out.println("Height of "+height[h]+" no blocks");
 				}
 			}
 			sum=0;
+			result="";
 		}
 	}
 }
