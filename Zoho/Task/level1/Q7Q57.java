@@ -5,6 +5,7 @@ public class Q7Q57{
 		
 		Scanner sc = new Scanner(System.in);
 		String num = sc.next();
+		//int num = sc.nextInt();
 		int count=0;
 		
 		/*for(int i=1;i<=num;i++){
@@ -52,10 +53,20 @@ public class Q7Q57{
 			System.out.println();
 		}*/
 		
-		for(int i=0;i<num.length();i++){
+		/*for(int i=0;i<num.length();i++){
 			for(int j=0;j<num.length();j++){
 				if(j==i || j==num.length()-i-1)
 					System.out.print(num.charAt(i));
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}*/
+		
+		for(int i=0;i<num.length();i++){
+			for(int j=0;j<num.length();j++){
+				if(j==i || j==num.length()-i-1)
+					System.out.print(num.charAt(j));
 				else
 					System.out.print(" ");
 			}

@@ -1,13 +1,37 @@
-List<? extends Number>
+List+<? extends Number>
 
 List<? super Number>
 
 List<?>
 
-1010959649
-jn5b2L
-
 7
 
-1051533429
-xjRBPV
+1016298318
+jljuEM
+
+
+1025207020
+	eu8ZJ8
+	
+	
+cricket
+mail
+super market
+banking
+taxi
+Railway
+
+
+
+1. Call taxi booking -- Mosesh
+2. Email -- Sakthivel
+3. Banking system -- Jenishiya
+4. Billing Application for Super Market -- Madan
+5. Cricket -- Rahul
+
+
+email
+banking
+super marget
+call taxi
+cricket

@@ -2,7 +2,7 @@ package level2;
 
 import java.util.Scanner;
 import java.util.Arrays;
-//import array.ArrayOperations;
+import array.ArrayOperations;
 
 public class Q37{
 	
@@ -12,9 +12,9 @@ public class Q37{
 
 		Scanner sc = new Scanner(System.in);
 		
-		//int arr[] = ArrayOperations.getValues();
+		int arr[] = ArrayOperations.getValues();
 		
-		int arr[] = {120,24,71,10,59};
+		//int arr[] = {120,24,71,10,59};
 		for(int i=0;i<arr.length;i++){
 			reverse(arr[i]);
 			System.out.print(mul>sum?mul+" ":sum+" ");
