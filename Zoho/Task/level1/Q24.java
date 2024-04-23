@@ -7,5 +7,6 @@ public class Q24 {
 	System.out.println("Enter a Character: ");
 	int ascii = sc.next().charAt(0);
 	System.out.println(ascii);
+	//System.out.println((int)sc.next().charAt(0));
 	}
 }

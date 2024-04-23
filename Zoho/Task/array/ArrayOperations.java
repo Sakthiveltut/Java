@@ -16,7 +16,7 @@ public class ArrayOperations{
 		//int arr[] = {1,2,3,4,5,6,7,8};
 		//int arr[] = {0,00,1,1,3,3,3,3,5,5,5,};
 		//int arr[] = {0,00,0,0,00,0,0,};
-		int arr[] = {1,1,2,2,2,3,3,3,3,4,4};
+		int arr[] = {1,1,2,2,2,3,3,3,3,4,4,0,0};
 		
 
 		//sortArray(arr,"decending");
@@ -89,6 +89,7 @@ public class ArrayOperations{
 					break;
 				}
 				if(j==i){
+					//System.out.print(arr[i]+" ");
 					temp[count++]=arr[i];
 				}
 			}

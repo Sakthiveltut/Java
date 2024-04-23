@@ -6,13 +6,13 @@ public class Q51{
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a value: ");
-		int arr1[][] = {{1, 0, 1, 0, 0 },
-					   {1, 1, 1, 1, 1 },
-					   {0, 0, 0, 1, 0 },
-					   {1, 0, 1, 1, 1 },
-					   {0, 1, 1, 0, 1 }};
-					   
 		int arr[][] = {{1, 1, 1, 1, 1 },
+					   {0, 0, 0, 0, 1 },
+					   {1, 1, 1, 1, 1 },
+					   {1, 0, 0, 0, 0 },
+					   {1, 1, 1, 1, 1 }};
+					   
+		int arr2[][] = {{1, 1, 1, 1, 1 },
 					   {1, 0, 1, 0, 0 },
 					   {1, 1, 0, 1, 0 },
 					   {0, 1, 0, 1, 0 },
@@ -23,6 +23,12 @@ public class Q51{
 					   {1, 0, 1, 0, 1 },
 					   {1, 0, 1, 0, 1 },
 					   {1, 1, 1, 0, 1 }};
+					   
+		int arr1[][] = {{1, 1, 1, 1,1},
+					   {1, 0, 0, 0,1},
+					   {1, 0, 1, 1,0},
+					   {1, 1, 1, 0,1}};
+		
 					   
 		int dimention = (arr.length-1)*10+(arr[0].length-1);
 		int size = (arr.length)*(arr[0].length);
@@ -42,7 +48,7 @@ public class Q51{
 		for(int i=0;i<route.length;i++){
 			for(int j=i+1;j<route.length;j++){
 				if(route[i]+1==route[j] || route[i]+10==route[j]){
-					System.out.println(i+" "+j);
+					//System.out.println(i+" "+j);
 					
 					System.out.println(route[j]);
 					if(route[j]==dimention){

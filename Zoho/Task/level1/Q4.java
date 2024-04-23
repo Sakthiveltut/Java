@@ -51,8 +51,6 @@ public class Q4{
 		
 		System.out.println(-10>>2);  
 		System.out.println(-10>>>2);
-		
-
 	}
 }
 

@@ -3,10 +3,10 @@ import java.util.Arrays;
 public class Q53{
 	public static void main(String[] args){
 		
-		int arr[][] = {{1, -1, -1, 1 },
-					   {-1, -1, 1, -1 },
-					   {-1, 1, -1, -1},
-					   {-1, -1, -1, 1 }};
+		int arr[][] = {{-1, -1, -1, -1 },
+					   {-1, 1, 1, -1 },
+					   {-1, 1, 1, -1},
+					   {-1, -1, -1, -1}};
 					   
 		int dimention = (arr.length-1)*10+(arr[0].length-1);
 		int size = (arr.length)*(arr[0].length);			   
@@ -20,6 +20,7 @@ public class Q53{
 				}
 			}
 		}
+		System.out.println(Arrays.toString(land));
 		for(int i=0;i<land.length;i++){
 			count=0;
 			for(int j=i+1;j<land.length;j++){

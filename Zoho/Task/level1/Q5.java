@@ -14,6 +14,9 @@ public class Q5{
 			iteration = 64;
 		}else if(Character.isLowerCase(letter)){
 			iteration = 96;
+		}else{
+			iteration = letter;
+			System.out.println("Invalid input.");
 		}
 		
 		for(char i=letter;i>iteration;i--){

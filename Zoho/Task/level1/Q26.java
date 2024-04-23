@@ -4,6 +4,5 @@ public class Q26{
 	long value = 9223372036854775807l;
 	System.out.println(value);
 	
-				
 	}
 }
