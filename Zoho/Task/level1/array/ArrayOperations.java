@@ -1,5 +1,6 @@
 package array;
-import java.util.*;
+import java.util.Scanner;
+import java.util.Arrays;
 
 public class ArrayOperations{
 
@@ -12,29 +13,28 @@ public class ArrayOperations{
 		//int arr[] = {9,2,4,5,1,1,45,4,8,8,8,8,8,0};
 		//int arr[] = {9,2,4,5,1,1,45,4,8,8,8,8,8};
 		//int arr[] = {9,2,4,5,1,9,2,4,5,1};
-		
 		//int arr[] = {9,2,4,5,1,1,00,9,9,2,4,5,1};
 		//int arr[] = {1,2,3,4,5,6,7,8};
 		//int arr[] = {0,00,1,1,3,3,3,3,5,5,5,};
 		//int arr[] = {0,00,0,0,00,0,0,};
-		
-		int arr[] = {1,1,2,2,2,3,3,3,3,4,4};
+		//int arr[] = {1,1,2,2,2,3,3,3,3,4,4,0,0};
+		//int arr[] = {5,4,3,2,1};
 
-		//sortArray(arr,"decending");
+
+		//System.out.println(Arrays.toString(sortArray(arr,"decending")));
+		//System.out.println(Arrays.toString(removeDuplicates(arr)));
 		//System.out.println(Arrays.toString(removeDuplicates(arr)));
 		//System.out.println(arr.length);
-		
-		System.out.println(Arrays.toString(getValues()));
+		//System.out.println(Arrays.toString(getValues()));
 	}
 	public static int[] sortArray(int[] arr,String order){
 		if(order.equals("ascending") || order.equals("decending")){
 			for(int h=0;h<arr.length;h++){
-				int position = h;
-				for(int i=0;i<arr.length;i++){
-					if(order == "ascending"?arr[position]<arr[i]:arr[position]>arr[i]){
-						arr[position] = arr[position]+arr[i];
-						arr[i] = arr[position]-arr[i];
-						arr[position] = arr[position]-arr[i];
+				for(int i=h+1;i<arr.length;i++){
+					if(order == "ascending"?arr[h]>arr[i]:arr[h]<arr[i]){
+						arr[h] = arr[h]+arr[i];
+						arr[i] = arr[h]-arr[i];
+						arr[h] = arr[h]-arr[i];
 					}
 				}
 			}
@@ -44,7 +44,7 @@ public class ArrayOperations{
 		return arr;
 	}
 	
-	public static int[] removeDuplicates(int[] arr){
+	/*public static int[] removeDuplicates(int[] arr){
 		int[] temp = new int[arr.length];
 		int count =0;
 		boolean zero=false;
@@ -68,28 +68,51 @@ public class ArrayOperations{
 			result[i] = temp[i];
 		}
 		return result;
+	}*/
+	
+	public static int[] removeDuplicates(int[] arr){
+		Integer[] temp = new Integer[arr.length];
+		int count =0;
+		for(int i=0;i<arr.length;i++){
+			for(int j=0;j<=i;j++){
+				if(temp[j]!=null && arr[i]==temp[j]){
+					break;
+				}
+				if(j==i){
+					//System.out.print(arr[i]+" ");
+					temp[count++]=arr[i];
+				}
+			}
+		}
+		int result[] = new int[count];
+		for(int i=0;i<result.length;i++){
+			result[i] = temp[i];
+		}
+		return result;
 	}
 	
-	public static int[] getValues() {
+	public static int[] getValues(){
 		Scanner sc = new Scanner(System.in);
 		int count = 0,temp[],i=0;
 		int arr[] = new int[count];
 		String str = "";
-		System.out.println("Enter a value('break' to exit): ");
+		System.out.println("('break' to exit): ");
 		while(count>=0){
 			str = sc.next();
 			if(str.equals("break"))
 				return arr;
-			else if(str.matches("[0-9]+")){
+			try{
+				int value = Integer.parseInt(str);
 				temp = arr;
 				arr = new int[++count];
 				for(int j=0;j<temp.length;j++){
 					arr[j]=temp[j];
 				}
-				arr[i++] = Integer.parseInt(str);
+				arr[i++] = value;
 			}
-			else
+			catch(Exception e){
 				System.out.println("Invalid input.");
+			}
 		}
 		return arr;
 	}

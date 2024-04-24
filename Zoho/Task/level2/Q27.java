@@ -5,7 +5,7 @@ public class Q27{
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a value: ");
-		//int a[][] = {{1,2,3},{4,5,6},{7,8,9}};
+		//int a[][] = {{1,2,3},{1,2,3},{1,2,3}};
 		int x=0, y=0, z=0;
 		int a[][] = new int[3][3];
 		

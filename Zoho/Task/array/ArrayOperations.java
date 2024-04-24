@@ -16,25 +16,24 @@ public class ArrayOperations{
 		//int arr[] = {1,2,3,4,5,6,7,8};
 		//int arr[] = {0,00,1,1,3,3,3,3,5,5,5,};
 		//int arr[] = {0,00,0,0,00,0,0,};
-		int arr[] = {1,1,2,2,2,3,3,3,3,4,4,0,0};
-		
+		//int arr[] = {1,1,2,2,2,3,3,3,3,4,4,0,0};
+		//int arr[] = {5,4,3,2,1};
 
-		//sortArray(arr,"decending");
+
+		//System.out.println(Arrays.toString(sortArray(arr,"decending")));
 		//System.out.println(Arrays.toString(removeDuplicates(arr)));
-		System.out.println(Arrays.toString(removeDuplicates(arr)));
+		//System.out.println(Arrays.toString(removeDuplicates(arr)));
 		//System.out.println(arr.length);
-		
 		//System.out.println(Arrays.toString(getValues()));
 	}
 	public static int[] sortArray(int[] arr,String order){
 		if(order.equals("ascending") || order.equals("decending")){
 			for(int h=0;h<arr.length;h++){
-				int position = h;
-				for(int i=0;i<arr.length;i++){
-					if(order == "ascending"?arr[position]<arr[i]:arr[position]>arr[i]){
-						arr[position] = arr[position]+arr[i];
-						arr[i] = arr[position]-arr[i];
-						arr[position] = arr[position]-arr[i];
+				for(int i=h+1;i<arr.length;i++){
+					if(order == "ascending"?arr[h]>arr[i]:arr[h]<arr[i]){
+						arr[h] = arr[h]+arr[i];
+						arr[i] = arr[h]-arr[i];
+						arr[h] = arr[h]-arr[i];
 					}
 				}
 			}
@@ -43,16 +42,6 @@ public class ArrayOperations{
 		}
 		return arr;
 	}
-	
-		/*for(int i=0;i<arr.length;i++){
-			for(int j=i+1;j<arr.length;j++){
-				if(arr[i]<arr[j]){
-					arr[i]=arr[i]+arr[j];
-					arr[j]=arr[i]-arr[j];
-					arr[i]=arr[i]-arr[j];
-				}
-			}
-		}*/
 	
 	/*public static int[] removeDuplicates(int[] arr){
 		int[] temp = new int[arr.length];
@@ -112,12 +101,13 @@ public class ArrayOperations{
 			if(str.equals("break"))
 				return arr;
 			try{
+				int value = Integer.parseInt(str);
 				temp = arr;
 				arr = new int[++count];
 				for(int j=0;j<temp.length;j++){
 					arr[j]=temp[j];
 				}
-				arr[i++] = Integer.parseInt(str);
+				arr[i++] = value;
 			}
 			catch(Exception e){
 				System.out.println("Invalid input.");
@@ -125,6 +115,5 @@ public class ArrayOperations{
 		}
 		return arr;
 	}
-	
 }
 
