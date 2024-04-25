@@ -7,6 +7,7 @@ public class Q32{
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a value: ");
+
 		int arr1[][] = {{1,2},
 						{4,5}};
 		
