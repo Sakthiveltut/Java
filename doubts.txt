@@ -4,23 +4,6 @@ List<? super Number>
 
 List<?>
 
-7
-
-1016298318
-jljuEM
-
-
-1025207020
-	eu8ZJ8
-	
-	
-cricket
-mail
-super market
-banking
-taxi
-Railway
-
 
 
 1. Call taxi booking -- Mosesh
@@ -36,3 +19,6 @@ super marget
 call taxi
 cricket
 
+
+email:
+1.password validate

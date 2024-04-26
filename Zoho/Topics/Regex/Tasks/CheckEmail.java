@@ -11,7 +11,8 @@ public class CheckEmail{
 		System.out.println("Enter a Email: ");
 		String email = sc.next();
 		
-		Pattern p=Pattern.compile("^((\b[a-z0-9[.][_]]+\b)(@gmail.com))$");
+		//Pattern p=Pattern.compile("^((\b[a-z0-9[.][_]]+\b)(@gmail.com))$");
+		Pattern p=Pattern.compile("^[a-z0-9]+(\.[a-z0-9]+)*@[a-z]+(\.[a-z]+)$");
 
 		Matcher m=p.matcher(email);
 		
@@ -21,3 +22,5 @@ public class CheckEmail{
 			System.out.println("Invalid");
 	}
 }
+
+
