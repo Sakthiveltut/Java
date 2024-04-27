@@ -1,6 +1,8 @@
 //package level2;
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 public class Main{
 	public static void main(String[] args){
@@ -14,7 +16,7 @@ public class Main{
 
 			}
 		}
-		
+		System.out.println(new SimpleDateFormat("dd-MM-yyyy hh:mm a").format(new Date()));
 	}
 }
 

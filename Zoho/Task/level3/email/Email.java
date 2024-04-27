@@ -1,12 +1,13 @@
 package email;
 import java.util.Scanner;
+import java.util.List;
 
 public class Email{
 	static Scanner sc = new Scanner(System.in);
-	static User user = new User();
-	static UserDatabase userDatabase = new UserDatabase();
+	static User user;
+	static UserDatabase userDatabase = UserDatabase.getInstance();
 	static String name,email,password1,password2;
-	 
+	static Login auth = new Login();
 	
 	public static void main(String[] args){
 		
@@ -15,32 +16,30 @@ public class Email{
 			int choice = sc.nextInt();
 			switch(choice){
 				case 1:
+					user = new User();
 					if(isName() && isEmail() && isPassword()){
 						System.out.println("Account created successfully.");
 					}
+					userDatabase.addUser(user);
+					break;
 				case 2:
-					System.out.println("Enter a email id: ");
-					String email = sc.nextLine();
-					if(Validator.isValidEmail(email)){
-						System.out.println("Enter a password: ");
-						String password = sc.nextLine();
-						if(login(email, password)){
-							System.out.println("Login successfully.");
-						}else
-							System.out.println("Invalid username or password.");
-					}
+					auth.loggedIn();
+					break;
+				default:
+					System.out.println("Invalid choice.Please try again...");
 			}
-			userDatabase.addUser(user);
 			System.out.println(userDatabase.getUser());
 		}
 	}
 	
 	static boolean isName(){
 		System.out.println("Enter a name: ");
+		sc.nextLine();
 		name = sc.nextLine();
 		if(!user.setName(name)){
 			isName();
 		}
+		name="";
 		return true;
 	}
 	static boolean isEmail(){
@@ -49,6 +48,7 @@ public class Email{
 		if(!user.setEmail(email)){
 			isEmail();
 		}
+		email="";
 		return true;
 	}
 	static boolean isPassword(){
@@ -61,15 +61,8 @@ public class Email{
 		if(!user.setPassword(password1,password2)){
 			isPassword();
 		}
+		password1="";password2="";
 		return true;
 	}
-	static public boolean login(String email,String password){
-		List<User> users = userDatabase.getUser();
-		for(String user: users){
-			if(user.getEmail().equals(email) && user.getPassword().equals(password)){
-				return true;
-			}
-		}
-		return false;
-	}
+
 }

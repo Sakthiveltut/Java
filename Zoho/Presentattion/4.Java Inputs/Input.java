@@ -10,7 +10,7 @@ public class Input {
 
         System.out.print("Enter a string: ");
         String str1 = scanner.nextLine();
-	scanner.nextLine();
+		scanner.nextLine();
         System.out.println("You entered: " + str1);
 
 	System.out.print("Enter a string: ");
