@@ -7,7 +7,7 @@ public class UserDatabase{
 	private static UserDatabase userDatabase;
 	private List<User> list = new ArrayList<>();
 	
-	public static UserDatabase getInstance(){
+	public static synchronized UserDatabase getInstance(){
 		if(userDatabase==null){
 			userDatabase = new UserDatabase();
 		}
@@ -20,5 +20,15 @@ public class UserDatabase{
 	
 	public void addUser(User user){
 		list.add(user);
+	}
+	
+	static public User findUser(String email){
+		List<User> users = userDatabase.getUser();
+		for(User user: users){
+			if(user.getEmail().equals(email)){
+				return user;
+			}
+		}
+		return null;
 	}
 }

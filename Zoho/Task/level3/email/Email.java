@@ -12,6 +12,15 @@ public class Email{
 	public static void main(String[] args){
 		
 		while(true){
+			
+			System.out.println("      ______                 _ _ ");
+			System.out.println("     |  ____|               (_) |");
+			System.out.println("     | |__   _ __ ___   __ _ _| |");
+			System.out.println("     |  __| | '_ ` _ \\ / _` | | |");
+			System.out.println("     | |____| | | | | | (_| | | |");
+			System.out.println("     |______|_| |_| |_|\\__,_|_|_|");
+
+	 
 			System.out.println("1.Signup\n2.Login");
 			int choice = sc.nextInt();
 			switch(choice){
@@ -64,5 +73,4 @@ public class Email{
 		password1="";password2="";
 		return true;
 	}
-
 }

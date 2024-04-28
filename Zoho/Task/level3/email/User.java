@@ -43,8 +43,11 @@ public class User{
 	public boolean setEmail(String email){
 		
 		if(Validator.isValidEmail(email)){
-			this.email=email;
-			return true;
+			if(UserDatabase.findUser(email)==null){
+				this.email=email;
+				return true;
+			}else
+				System.out.println("That email id is taken.Try another.");
 		}
 		return false;
 	}

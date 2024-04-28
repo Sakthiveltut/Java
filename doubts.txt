@@ -21,4 +21,13 @@ cricket
 
 
 email:
-1.password validate
+1.password validate - ^(?!\s)(?=.*[A-Z])(?=.*[0-9])(?=.*[\W]).{8,}(?<!\s)$
+2.nextLine() issue
+
+
+id 
+Date 
+from 
+to 
+subject 
+body 

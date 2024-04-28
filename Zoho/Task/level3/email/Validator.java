@@ -25,5 +25,10 @@ public class Validator{
 		//System.out.println("\nPassword mismatch.");
 		return true;
 	}
+	
+	static public boolean isValidCC(String cc){
+		
+		return true;
+	}
 }
 
