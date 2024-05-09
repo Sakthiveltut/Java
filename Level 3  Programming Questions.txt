@@ -1,0 +1,364 @@
+1)
+Write an application for booking railway ticket reservation system. 
+The application should have four functionalities.
+
+1.Book
+2.Cancel
+3.Print booked tickets (details with summary)
+4.Print available tickets (details with summary)
+
+CONDITIONS FOR BOOKING:
+
+There are a total of 63 berths for 63 confirmed tickets, 9 berths for 18 RAC tickets and 10 tickets in waiting-list. If the waiting-list ticket count goes above 10, print as ‘No tickets available’. The following passenger details should be obtained from the user.
+
+* Name
+* Age
+* Gender
+* Berth Preference
+The tickets should not be allocated for children below age 5.But, their details should be stored. Lower berth should be allocated for persons whose age is above 60 and ladies with children if available. Side-lower berths should be allocated for RAC passengers.
+
+CONDITIONS FOR CANCELLING:
+
+Whenever a ticket is cancelled, a ticket from RAC should be confirmed and a waiting-list ticket should move to RAC.
+
+CONDITIONS FOR PRINTING BOOKED TICKETS:
+
+Print all the tickets that are filled along with the passenger details and at the end, print the total number of tickets that are filled.
+
+CONDITIONS FOR PRINTING AVAILABLE TICKETS:
+
+Print all the tickets that are unoccupied and at the end, print the total number of tickets that are unoccupied.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+2)Design Call taxi booking application
+
+-There are n number of taxi's. For simplicity, assume 4. But it should work for any number of taxi's.
+
+-The are 6 points (A, B, C, D, E, F)
+
+-All the points are in a straight line, and each point is 15kms away from the adjacent points.
+
+-It takes 60 mins to travel from one point to another
+
+-Each taxi charges Rs.100 minimum for the first 5 kilometers and Rs.10 for the subsequent kilometers.
+
+-For simplicity, time can be entered as absolute time. Eg: 9hrs, 15hrs etc. -All taxi's are initially stationed at A.
+
+When a customer books a Taxi, a free taxi at that point is allocated
+
+- If no free taxi is available at that point, a free taxi at the nearest point is
+
+allocated. -If two taxi's are free at the same point, one with lower earning is allocated -Note that the taxi only charges the customer from the pickup point to the drop
+
+point. Not the distance it travels from an adjacent point to pickup the customer. -If no taxi is free at that time, hooking is rejected
+
+Design modules for
+
+1) Call taxi booking
+
+Input 1: Customer ID: 1
+
+Pickup Point: A
+
+Drop Point: B
+
+Pickup Time: 9
+
+Output 1:
+
+Taxi can be allotted. Taxi-1 is allotted
+
+Input 2: Customer ID: 2
+
+Pickup Point: B Drop Point: D
+
+Pickup Time: 9
+
+Output 1:
+
+Taxi can be allotted.
+
+(Note: Since Taxi-1 would have completed its journey when second booking is done, so Taxi-2 from nearest point A which is free is allocated)
+
+Taxi-2 is allotted
+
+Input 3:
+
+Customer ID: 3
+
+Pickup Point: B Drop Point: C
+
+Pickup Time: 12
+
+Output 1:
+
+Taxi can be allotted.
+
+Taxi-1 is allotted
+
+2) Display the Taxi details
+Taxi No: Total Earnings:
+
+BookingID CustomerID From To PickupTime DropTime Amount
+
+Output:
+
+Taxi-1
+
+1
+
+3
+
+Total Earnings: Rs. 400
+
+A B 9 C 12 10 200 13 200 B
+
+Taxi-2 Total Earnings: Rs. 350
+
+2 2 B D9 11 350
+
+These were just sample inputs. It should work for any input that they give. Those who finished both the modules within 3 hours and if it worked for all the inputs they give, those candidates were given extra modules to work with.
+
+------------------------------------------------------------------------------------------------------------------------
+
+3) We were asked to design an application program for non tic-tac-toe game. Here, you are expected to code with proper standards and in a most optimized way. And, in this round you need to find all the edge cases and corner cases yourself. The interviewers won't help you if you miss anything. So, make sure you covered all the cases before showing output to the interviewers.
+
+Implementation of Tic Tac Toe Game
+
+Only 2 people cleared this round.
+
+------------------------------------------------------------------------------------------------------------------------
+
+4) Quiz Application
+
+Create a quiz CLI application which should perform the following operations,
+
+1. Display the question and options
+
+2.Get the input from the user as choice a,b,c or d
+
+3. Evaluate the correct answer and displays the points after completing the each questions
+
+4.One question must be display at once
+
+5.Save all the points along with question number in a file
+
+6.Display the result along with remarks like, Good, Poor, Excellent to the user
+
+-----------------------------------------------------------------------------------------------------------------------
+
+5) We were asked to develop a mini-project 'Invoice Management' with the following modules:
+
+1. Add a customer
+
+2. Add an invoice
+
+3. Add items to an Invoice
+
+4. List all customers
+
+5. List all invoices
+
+6. List all invoices of a customer
+
+7. Display the full details of an invoice.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+6) Email application : 
+1) Account create 
+2) Login 
+cc
+3) Send message 
+4) Draft message 
+5) View send messages 
+6) View received message 
+7) View draft message 
+8) Log out
+security
+-------------------------------------------------------------------------------------------------------------------------
+
+7) Design a simple banking system with the specified features. We’ll create a basic structure
+for managing customer accounts, gift cards, and transactions.
+
+1. Account Login:
+	✓ Customers provide their ID and password.
+	✓ Passwords are encrypted using a simple substitution cipher (e.g., A->B, B->C,
+	etc.).
+	✓ Upon successful login, account details are displayed.
+	✓ Available options:
+	• Create Gift Card
+	• TopUp
+	• Transaction History
+	• Block
+	• Logout
+2. Create Gift Card:
+	• Generate a 5-digit card number and a 4-digit PIN for the gift card.
+3. TopUp:
+	• Reduce the specified amount from the main account balance.
+	• Add the same amount to the gift card.
+4. Transaction History:
+	• Display all transaction details for a particular gift card.
+5. Block:
+	• If a gift card is blocked:
+	✓ It shouldn’t be available for TopUp or Purchase.
+	✓ The gift card’s balance should be transferred back to the main
+	account.
+6. Logout:
+	• Return to the main module after logging out.
+7. Purchase:
+	• Login to the gift card.
+	• Specify the purchase amount.
+	• Print the available balance after the purchase.
+8. Redeem Points:
+	• For every ₹100 purchase, 1 reward point is added.
+	• For every 10 reward points, ₹10 is added to the main account.
+9. Handling Multiple Gift Cards:
+	• Extend the system to manage multiple gift cards for each customer.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+8)Design and implement a 'Billing Application' for Super Market:
+================================================================
+Build a 'Billing Application' for Super Market, which should be able to perform all the general operations required for purchasing & selling the products.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+9)Library Management System
+-------------------------------
+You have to design a library management system. The system should have follow
+resources -
+	1. Admins (User name / password )
+	2. Members (Member unique id / User name / password / Age / Gender / joining
+	date )
+	3. Books (Book Unique Id , Title, Description , Author details , Publication date,
+	edition , price , count)
+Module 1:
+As an admin of the library management system, you should be able to login with
+credentials (user name : admin , password : admin). Once you logged in into the system
+following options should be supported
+	1. Add a new book
+	2. Remove an existing book
+	3. View list of books
+	4. Add a new user
+	5. Remove an existing user
+	6. View list of users
+Admin can choose anyone of the options and perform the action.
+Note : Unique Id for book and Members has to be generated by system.
+Module 2 :
+The system should show 2 options at first
+	* Login as admin
+	* Login as member.
+As a member of library management, I should be able to login into the system.
+Once logged in, I should be able to
+	1. Search for a book
+	2. Issue a book by providing the book unique Id
+	3. Return a book
+Module 3 :
+Before member tries to issue the book add follow validations and show proper error
+message to the library members
+	1. The book is NOT available in the library
+	2. User can issue max 5 books at a time
+	3. User has not currently issued any book longer than 1 month
+	
+-------------------------------------------------------------------------------------------------------------------------
+
+10) A food delivery company has 'n' number of delivery executives. For simplicity take the count as 5 but the program
+should work for any number of delivery executives (Let their names be identified as DE1, DE2....DE-n)
+There are only 5 restaurants in the city for pick-up and 5 drop locations (Each location can have multiple customers)
+After delivering a food package , the delivery executive waits there for devlivery allotment.
+Each customer is identified uniquely by a Customer-ID
+Write a program that does the following :
+Constraints :
+1.Delivery charge for every single order is Rs 50 for the delivery executive.
+2. If multiple orders (say n) are from the same delivery location within 15 mins period, combine orders to a maximum
+of 5 per delivery executive.
+    In such case, the delivery charge will be base rate Rs.50 + Rs.5 for every other order (50+5 * (n-1)).
+3. An allowance of Rs.10 will be given for every trip made. Combined orders will be counted as a single trip.
+4. Assign the subsequent bookings giving preference to the executive who has earned the least delivery charge
+among the other available delivery executives excluding trip allowance.
+5. Every trip will take 30 mins to reach the destination.
+Questions :
+1. Write a function to handle booking.
+2. Write a function to assign delivery executive
+3. Write a function that can display delivery executive's activity thus far.
+This should contain commision earned , allowance earned(calculated based on criteria 2 and 3).
+Input 1
+Customer ID: 1
+Restaurant: A
+Destionation Point : D
+Time : 9.00 AM
+Output
+Booking ID : 1
+Available Executives :
+Executive     Delivery Charge Earned    
+DE1                      0
+DE2                      0
+DE3                      0
+DE4                      0
+DE5                      0
+
+Allotted Delivery Executive: DE1
+---------------------------------------------------------
+Input 2
+Customer ID: 2
+Restaurant : B
+Destination Point : A
+Time : 10.00 AM
+Output
+Booking ID : 2
+Available Executives :
+Executive     Delivery Charge Earned    
+DE1                      50
+DE2                      0
+DE3                      0
+DE4                      0
+DE5                      0
+Allotted Delivery Executive: DE2
+---------------------------------------------------------
+Input 3
+Customer ID: 3
+Restaurant : B
+Destionation Point : A
+Time : 10.10 AM
+Output
+Booking ID : 3
+Available Executives :
+Executive     Delivery Charge Earned
+DE1                      50
+DE2                      50
+DE3                      0
+DE4                      0
+DE5                      0
+Allotted Delivery Executive: DE2 (because same location within 15mins)
+---------------------------------------------------------
+Input 4
+Customer ID: 3
+Restaurant : D
+Destionation Point : C
+Time : 10.35 AM
+Output
+Booking ID : 3
+Available Executives :
+Executive     Delivery Charge Earned
+DE1                      50
+DE2                      55
+DE3                      0
+DE4                      0
+DE5                      0
+Allotted Delivery Executive: DE3
+---------------------------------------------------------
+Delivery History
+Output
+TRIP EXECUTIVE RESTAURANT DESTINATION POINT ORDERS PICK-UP_TIME DELIVERY_TIME DELIVERY CHARGE
+1 DE1 A D 1 9:15 9:45 50
+2 DE2 B A 2 10:15 10:45 55
+3 DE3 D C 1 10:50 11:20 50
+Total earned
+Executive Allowance Deliver Charges Total
+DE1 10 50 60
+DE2 10 55 65
+DE3 10 50 60
+
+-------------------------------------------------------------------------------------------------------------------------
