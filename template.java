@@ -1,20 +1,11 @@
-//package level2;
 import java.util.Scanner;
 import java.util.Arrays;
 
 public class Main{
 	public static void main(String[] args){
-		Scanner sc1 = new Scanner(System.in);
-        //Scanner sc2 = new Scanner(System.in);
-		
-		/*System.out.println(sc1.nextLine());
-		System.out.println(sc1.nextInt());
-		System.out.println(sc1.nextLine());
-		System.out.println(sc1.nextInt());
-		System.out.println(sc1.nextLine());*/
+		Scanner sc = new Scanner(System.in);
 	
-		int mobile = 10234567891;
-		System.out.println(mobile);		
+		System.out.println();		
 		
 	}
 }

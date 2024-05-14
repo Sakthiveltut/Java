@@ -12,17 +12,11 @@ List<?>
 4. Billing Application for Super Market -- Madan
 5. Cricket -- Rahul
 
-
 email
 banking
 super marget
 call taxi
 cricket
-
-
-email:
-1.password validate - ^(?!\s)(?=.*[A-Z])(?=.*[0-9])(?=.*[\W]).{8,}(?<!\s)$
-2.nextLine() issue
 
 
 id 
@@ -31,4 +25,3 @@ from
 to 
 subject 
 body
- 

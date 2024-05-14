@@ -14,7 +14,7 @@ public class MySQLCRUD{
 		Scanner sc1 = new Scanner(System.in);
 		Scanner sc2 = new Scanner(System.in);
 		
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		//Class.forName("com.mysql.cj.jdbc.Driver");
 		//Class.forName("com.mysql.jdbc.Driver");
 		
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","root");
@@ -49,6 +49,7 @@ public class MySQLCRUD{
 					city=sc2.nextLine();
 					
 					query = "Insert into users (Name,Age,City) values(?,?,?)";
+					//query = "Insert into users (Name,Age,City) values("+name+","+age+","+city+")";
 					
 					preparedStatement = con.prepareStatement(query);
 					preparedStatement.setString(1,name);
@@ -56,6 +57,7 @@ public class MySQLCRUD{
 					preparedStatement.setString(3,city);
 					
 					preparedStatement.executeUpdate();
+					//statement.executeUpdate(query);
 					System.out.println("Data inserted successfully.");
 					break;
 				case 2:
