@@ -23,7 +23,7 @@ public class MySQLCRUD{
 		ResultSet resultSet;
 		PreparedStatement preparedStatement;
 		
-		String query = "",name,city;
+		String query,name,city;
 		int id,age,choice;
 		
 		while(true){
