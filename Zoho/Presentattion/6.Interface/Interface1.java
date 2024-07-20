@@ -30,7 +30,6 @@ class Interface1 implements Printable, Showable{
     public static void main(String args[]){  
 
         Interface1 obj = new Interface1();  
-	System.out.println(obj.sub(10,10));
-
+		System.out.println(obj.sub(10,10));
     }  
 }  

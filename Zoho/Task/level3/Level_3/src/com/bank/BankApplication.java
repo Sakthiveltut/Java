@@ -1,4 +1,4 @@
-package com.bank_application;
+package com.bank;
 import java.util.Scanner;
 
 public class BankApplication {

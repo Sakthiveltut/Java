@@ -1,4 +1,4 @@
-package com.bank_application;
+package com.bank;
 
 public class Transaction {
 	private long id,accountNumber;

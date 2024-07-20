@@ -1,4 +1,4 @@
-package com.bank_application;
+package com.bank;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

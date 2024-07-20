@@ -1,4 +1,4 @@
-package com.snake_game;
+package com.game;
 
 import java.util.Arrays;
 import java.util.Scanner;
