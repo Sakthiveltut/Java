@@ -1,3 +1,22 @@
+public class FinalClass{
+    public static void main(String[] args) {
+
+        //System.out.println("Square of 5: " + MathOperations.square(5.0));
+        //System.out.println("Cube of 3: " + MathOperations.cube(3.0));
+        //System.out.println("Factorial of 4: " + MathOperations.factorial(4));
+
+		//MathOperations.check();
+		
+		MathOperations mo = new MathOperations();
+		mo.a = 20;
+		System.out.println(mo.a);
+		mo.check();
+		
+		ExtendedMathOperations object = new ExtendedMathOperations();
+		object.operation.check();
+    }
+}
+
 final class MathOperations {
 
 	int a =10;
@@ -21,39 +40,22 @@ final class MathOperations {
         }
     }
 
-    	static void check(){
+    void check(){
 		MathOperations mo = new MathOperations();
 		System.out.println(mo.square(10));
 		System.out.println(mo.cube(5));
+		a=20;
 	}
 
 }
 
-/*
-class ExtendedMathOperations extends MathOperations {
-    // Compilation error: Cannot inherit from final 'MathOperations'
+
+class ExtendedMathOperations {
+
+	MathOperations operation = new MathOperations(){
+		void check(){
+			System.out.println("Override method");
+		}
+	};
 }
-*/
 
-public class FinalClass{
-    public static void main(String[] args) {
-
-        //System.out.println("Square of 5: " + MathOperations.square(5.0));
-        //System.out.println("Cube of 3: " + MathOperations.cube(3.0));
-        //System.out.println("Factorial of 4: " + MathOperations.factorial(4));
-
-	MathOperations.check();
-	
-	MathOperations mo = new MathOperations();
-	mo.a = 20;
-	System.out.println(mo.a);
-	mo.check();
-
-	/*MathOperations mo1 = new MathOperations(){
-		public double square(double num){
-			System.out.println(num);
-		}	
-	};*/
-	
-    }
-}
