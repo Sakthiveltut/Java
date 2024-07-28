@@ -1,0 +1,146 @@
+1)Difference between a 2-digit number and the number obtained by interchanging its digits is 54. find the difference between it's digits.
+
+2)How much seconds needed by a train to cross a 90m long platform ? If the train is 150m long and its speed is 72 kmph.
+
+3)Excluding stoppages, the speed of a bus is 54kmph and including stoppages it is 45kmph. For how many minutes does the bus stop per hour ?
+
+4)Akash can finish a work in 15 days and Prasath can finish in 30 days. 
+Akash started working alone and after few days Prasath joined him and both completed the work in 4 days. 
+After how many days did Prasath join the work ?
+
+5)Late one night Bookworm was studying for his examinations when the lights went out. 
+He lighted two candles of equal length, one thicker than the other. 
+The thick candle is supposed to last six hours and the thin one two hours less. 
+When he finally went to sleep the thick candle was twice as long as the thin one. 
+For how long did he study by the candle light ?
+
+6)Narasimha and Nithin started a business investing amounts of Rs. 185000 and Rs. 225000 respectively. 
+If Nithin share in the profit is earned by them is rs. 9000, what is the total profit earned by them together ?
+
+7)Speed of Barry in still water is 5kmph and the river is running at 3kmph. 
+The total time taken to go to a place and comeback is 10 hours. 
+What is the distance traveled?
+
+8)4 men and 6 women can complete a work in 8 days, while 3 men and 7 women can complete it in 10 days.
+In how many days will 10 women complete it ?
+
+9)In a college election between two candidates, one candidate got 25% of the total valid votes.
+30% of the votes were invalid. If the total votes were 7600, what is the number of votes the other
+candidate got?
+
+10)Two cyclists start together to travel to a certain destination, one at the rate of 4kph and the other
+at the rate of 5kph. Find the distance if the former arrives 30 minutes after the latter.
+
+11)A basket contains 5 red, 4 blue 3 green toys. 
+If three toys are picked up at random, what is the probability that atleast 1 is blue ?
+
+12)A bag contains 6 red marbles, 5 blue marbles, and 4 green marbles. 
+If two marbles are picked at random from the bag, what is the probability that at least one is green?
+
+13)The third of Antony’s marks in maths exceed half of marks in English by 30 
+if she got 240 marks in two subjects together. How many marks did he get in English?
+
+14)The batting average of runs of a cricket player of 30 games was 96. 
+How many runs must he make in his next game so as to increase his average of runs by 12?
+
+15)18 years ago, Jonny was 3 times as old as his son David. Now Jhonny is only twice as old as his son David. Then the sum of the present ages of Jhonny and David is?
+
+16)One evening before sunset, Ramon and Harrison were talking to each other face to face.
+ If Harrison's shadow was exactly to the right of Harrison, which direction was Ramon facing?
+
+17)There are seven pairs of blue shoes and five pairs of purple shoes.
+ They are all put into a box and shoes are drawn one at a time. 
+To ensure that at least one pair of blue shoes are taken out, 
+what is the number of shoes required to be drawn out
+
+18)In a local baking competition, a contestant used 35% of the flour used to make their pastries. 
+If the total flour given to all contestants was 120 kilograms and 15% of it was left unused, how much flour did the contestant use for their pastries?
+
+19)A train travels a certain distance at a speed of 60 km/h. The same distance is traveled by a car at a speed of 80 km/h. 
+If the car takes 2 hours less than the train, what is the distance traveled?
+
+20)Tom's age is 5 years more than twice the age of his sister. 
+If their combined ages add up to 35 years, how old is Tom's sister?
+
+21)In the evening, Amit and Asvini are sitting in a park with their backs facing each other's back. 
+If the shadow of Amit falls to the right of Asvini, which side is Amit facing ?
+
+22)A shopkeeper sold an item (A) at a 20% loss, which originally cost ₹4500. 
+He then used the money from this sale to buy another item (B), which he sold for a 30% profit. 
+What is the total profit or loss from both these transactions?
+
+23)In a school, the ratio of the number of boys to the number of girls is 5:3. 
+If there are 40 more boys than girls, how many students are there in the school?
+
+24)There are three pipes, named A, B, and C, that can fill a tank together in 6 hours. 
+They start filling the tank together, but after 2 hours, pipe C is turned off.
+ The remaining two pipes, A and B, then take 7 more hours to fill the tank. 
+How long would it take for pipe C to fill the tank by itself?
+
+25)In a chess tournament, there are 6 rounds, and each player plays exactly once against every other player. 
+How many players are there in the tournament?
+
+26)A rectangular garden has a length that is 4 meters more than its width. 
+If the area of the garden is 140 square meters, what are the dimensions of the garden?
+
+27)The price of a shirt is reduced by 20% during a sale. 
+If the original price was ₹500, what is the sale price of the shirt?
+
+28)Check out this sequence: 14, 28, 20, 40, 32, 64... 
+What number should come next in the sequence?
+
+29)A train that is 500 meters long is moving at a speed of 63 kilometers per hour. 
+A man is walking in the same direction as the train, and he is walking at a speed of 3 kilometers per hour. 
+How many seconds will it take for the train to pass by the man completely?
+
+30)In how many ways can we choose a group of 5 men and 6 women from a pool of 8 men and 10 women?
+
+31)What is the smallest positive integer that is evenly divisible by all the integers from 1 to 10 (inclusive)?
+
+32)If four people who weave mats can make four mats in four days, 
+how many mats would eight people who weave mats be able to make in eight days, 
+assuming they all work at the same speed?
+
+34)The shopkeeper got 25% loss.
+if he had $60 more on items he may got 5% profit.
+what is the cost price of item?
+
+35)the car travel from city A to city B in 60 km/h and return at 75 km/h.
+lf the total travel time is 6 hours what is the one way distance between cites?
+
+36) A pizza is divided into 8 equal slices.
+If 3 friends want to share it equally, how many slices will each friend get?
+
+37) If A can complete a task in 15 days, B can complete the same task in 12 days, 
+and C can complete it in 10 days,
+how long will it take for all three working together to complete the task?
+
+38)A man travels a certain distance. It takes him 10 hours to complete his journey.
+For the first half of the distance, he moves at a speed of 21 km/hr, for the second half, he travels at 24 km/hr. 
+How long is the entire journey in kilometers?
+
+39)182,181,183,179,187,171,__
+
+40)What day of the week will it be 132 days from today, If today is Thursday.
+
+41)In a particular week the average number of people visited the museum is 70. 
+If we exclude the holidays(2 days) then the average number will be increased by?
+
+42)I bought 5 pens, 7 pencils and 4 erasers. Rajan bought 6 pens, 
+8 erasers and 14 pencils for an amount which was half more what I had paid. 
+What percent of the total amount paid by me was paid for the pens?
+
+43)Find the odd one out.
+2, 9, 28, 65, 128, 217, 344, 513
+
+44)The vice captain of a cricket team of 11 members is 30 years old and the captain is 2 year younger than him. 
+If the ages of these two are excluded, the average age of the remaining players is two years less than the average age of the whole team. 
+What is the average age of the team?
+
+45)In a party every person shakes hands with every other person, 
+If there are 105 hand shakes, find the number of person in the party.
+
+46)Anirudh wants to cut a large rectangular board into small identical square pieces. 
+If the board size is 18 inches by 30 inches, 
+what is the least number of square pieces he can cut without wasting any of the board?
+
