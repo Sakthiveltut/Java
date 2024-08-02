@@ -21,5 +21,4 @@ public class BinarySearch {
 		}
 		return binarySearch(target, arr, mid+1, end);
 	}
-
 }

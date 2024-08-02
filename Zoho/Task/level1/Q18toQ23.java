@@ -15,8 +15,8 @@ public class Q18toQ23{
 		
 		System.out.println(69>>>2);
 
-		a=28;
-		//System.out.println(a+=a++ + ++a + -a +a-);	//illegal start of expression
+		a=2;
+		System.out.println("a "+(a+=a++ + ++a + -a +a-));	//illegal start of expression
 		System.out.println(a+=a++ + ++a + -a +a);	//a=28+28+30+-28+28=86
 		int x = 5;
 		System.out.println(x=x++*2+3*-x);//5*2+3*-6 -> 10-18

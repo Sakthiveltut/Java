@@ -1,30 +1,22 @@
 package com.practice;
 
+import java.util.Arrays;
+
+import java.util.Random;
+
 public class Demo1 {
     public static void main(String[] args) {
-        int number = 10;
-        
-        // Convert integer to binary using custom method
-        String binaryString = convertToBinary(number);
-        
-        System.out.println("The binary representation of " + number + " is: " + binaryString);
-    }
-    
-    public static String convertToBinary(int number) {
-        if (number == 0) {
-            return "0";
-        }
-        
-        StringBuilder binary = new StringBuilder();
-        while (number > 0) {
-            binary.insert(0, number % 2);
-            number = number / 2;
-            System.out.println(binary);
-        }
-        
-        return binary.toString();
+        Random random = new Random();
+        int min = 50;
+        int max = 104;
+
+        // Generate random number between min (inclusive) and max (inclusive)
+        int randomNumber = random.nextInt((max - min) + 1) + min;
+
+        System.out.println("Random number between " + min + " and " + max + ": " + randomNumber);
     }
 }
+  
 
 
 

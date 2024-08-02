@@ -2,6 +2,7 @@ package com.leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Q1329 {
@@ -11,8 +12,7 @@ public class Q1329 {
 		//int[][] mat = {{3,3,1,1},{2,2,1,2},{1,1,1,2}};
 		
         int[][] mat = {
-                {11, 25, 66, 1, 69, 7}
-                ,
+                {11, 25, 66, 1, 69, 7},
                 {23, 55, 17, 45, 15, 52},
                 {75, 31, 36, 44, 58, 8},
                 {22, 27, 33, 25, 68, 4},
@@ -26,6 +26,7 @@ public class Q1329 {
 			for(int row=i, col=j;row<rowLength && col<colLength;row++,col++) {
 				set.add(mat[row][col]);
 			}
+			Collections.sort(set);
 			int row=i, col=j;
 			for(int value: set) {
 				mat[row++][col++] = value;

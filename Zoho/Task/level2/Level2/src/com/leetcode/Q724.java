@@ -2,6 +2,7 @@ package com.leetcode;
 
 public class Q724 {
 	
+	//Find Pivot Index
 	public static void main(String[] args) {
 		int[] arr = {1,7,3,6,5,6};
 		System.out.println(pivotIndex(arr));

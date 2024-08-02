@@ -5,10 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Q91 {
-
+	
+	//Decode Ways
 	public static void main(String[] args) {
-		
-		System.out.println(numDecodings("21121212121"));
+		System.out.println(numDecodings("123"));
 	}
 	
 	public static int numDecodings(String s) {
@@ -25,32 +25,23 @@ public class Q91 {
     }
 	
     /*public static int numDecodings(String s) {
-    	boolean hasZero = false;
-        int arr[] = new int[s.length()];
-        for(int i=0;i<s.length();i++){
-            arr[i] = Character.getNumericValue(s.charAt(i));
-            if(arr[i]==0) {
-            	hasZero = true;
-            }
+        if(s == null || s.length() == 0) {
+          return 0;
         }
-        if(arr[0]==0) {
-        	return 0;
+        int n = s.length();
+        int[] dp = new int[n];
+        dp[0] = s.charAt(0) != '0' ? 1 : 0;
+        for(int i = 1; i < n; i++) {
+          int first = Integer.valueOf(s.substring(i, i+1));
+          int second = Integer.valueOf(s.substring(i-1, i+1));
+          if(first >= 1 && first <= 9) {
+            dp[i] += dp[i-1];
+          }
+          if(second >= 10 && second <= 26) {
+            dp[i] += i >=2 ? dp[i-2] : 1;
+          }
+          System.out.println(Arrays.toString(dp));
         }
-        if(hasZero) {
-        	if(arr.length==2) {
-        		return  1;
-        	}else if(arr.length==3) {
-        		return  2;
-        	}
-        }else if(arr.length==1) {
-        	return 1;
-        }else if(arr.length==2) {
-        	
-        	return 2;
-        }else if(arr.length==3) {
-        	return 3;
-        }
-        System.out.println(Arrays.toString(arr));
-        return 0;
+        return dp[n-1];
     }*/
 }

@@ -103,7 +103,7 @@ public class Q179 {
 	                String s1 = s_num[j] + s_num[j + 1];
 	                String s2 = s_num[j + 1] + s_num[j];
 	                System.out.println(s2+" "+s1);
-	                if (s2.compareTo(s1) > 0) {
+	                if (s2.compareTo(s1) > 0) { 
 	                    String temp = s_num[j];
 	                    s_num[j] = s_num[j + 1];
 	                    s_num[j + 1] = temp;
@@ -121,5 +121,12 @@ public class Q179 {
 
 	        return sb.toString();
 	    }
+	    
+	    /*
+	     	Comparing "apple" with "banana": -1
+			Comparing "banana" with "apple": 1
+			Comparing "apple" with "apple": 0 
+			
+	     */
 
 }

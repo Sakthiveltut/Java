@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
-public class SnakeGame {
+public class SnakeGame1 {
     private static final int WIDTH = 20;
     private static final int HEIGHT = 20;
     private static final char EMPTY_CELL = '.';
@@ -105,28 +105,28 @@ public class SnakeGame {
         int newX = head[0];
         int newY = head[1];
         
-        // Calculate new head position
+        // Calculate new head position with wrapping
         switch (direction) {
-            case 0: newY--; break; // Up
-            case 1: newX++; break; // Right
-            case 2: newY++; break; // Down
-            case 3: newX--; break; // Left
+            case 0: newY = (newY - 1 + HEIGHT) % HEIGHT; break; // Up
+            case 1: newX = (newX + 1) % WIDTH; break; // Right
+            case 2: newY = (newY + 1) % HEIGHT; break; // Down
+            case 3: newX = (newX - 1 + WIDTH) % WIDTH; break; // Left
         }
         
-        // Check for collisions
-        if (newX < 0 || newX >= WIDTH || newY < 0 || newY >= HEIGHT || grid[newX][newY] == SNAKE_CELL) {
+        // Check for collisions with the snake itself
+        if (grid[newX][newY] == SNAKE_CELL) {
             gameOver = true;
             return;
+        }
+        
+        for(int[] arr:snake) {
+        	System.out.println(Arrays.toString(arr));        	
         }
         
         // Move snake
         snake.add(0, new int[] { newX, newY });
         grid[newX][newY] = SNAKE_CELL;
         
-        for(int[] arr:snake) {
-        	System.out.println(Arrays.toString(arr));        	
-        }
-             
         // Check if food is eaten
         if (newX == food[0] && newY == food[1]) {
             placeFood();
@@ -137,5 +137,4 @@ public class SnakeGame {
         }
     }
 }
-
 

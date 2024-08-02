@@ -144,3 +144,103 @@ If there are 105 hand shakes, find the number of person in the party.
 If the board size is 18 inches by 30 inches, 
 what is the least number of square pieces he can cut without wasting any of the board?
 
+47) Six persons A, B, C, D, E & F are standing in a circle. 
+B is between D & C. A is between E & C. F is to the right of D. Who is between A & F?
+
+48) A bag contains 2 red caps, 4 blue caps, 3 yellow caps and 5 green caps. 
+If three caps are picked at random, what is the probability that none is green? 
+
+49) A group consists of 4 girls & 7 boys. 
+In how many ways can a team of 5 members be selected if the team has at least one boy & one girl?
+
+50) We reverse a number and form a new one. The old number is 45 less than the new number. 
+The sum of the digits of the old number is 9. What is the new number?
+
+51) Raju walks 80 m towards south. 
+Then, he turns to his right & starts walking straight till he completes another 80 m. 
+Then, again turning to his left he walks for 60 m. 
+He then turns to his left & walks for 80 m. How far is he from his initial position?
+
+52) The average height of a batch is 344 cm. 
+16 more students with an average height of 320 cm joined the batch 
+therefore decreasing the average height of the batch by 12 cm. 
+Find the total strength of the batch?
+
+53) James' father was 30 years old when he was born. 
+His mother's age was 24 when his sister who is 5 years younger to him, was born. 
+What is the difference between the age of James' father and mother?
+
+54)A policeman saw a thief from a distance of 450 m. 
+When the policeman started chasing him, the thief also started running. 
+The ratio of speeds of the thief to the policeman is 7 : 8. 
+After running how much distance (in km) can the policeman catch the thief?
+
+55)A thief is spotted by a policeman from a distance of 100 m. 
+When the policeman starts the chase, the thief also starts chasing. 
+If the speed of the thief is 8 km/hr and that of the policeman is 10 km/hr, 
+then how far will the thief have to run before he is overtaken?
+
+56)A man walks to a town at 4 kmph, rests there for 45 minutes and rides back at 7 kmph. 
+Find the distance to the town, if the total time spent is 6 hrs 15 min.
+
+57)Seven machines take 7 mins to make 7 identical toys. 
+At the same rate, how many minutes would it take for 100 machines to make 100 toys?
+
+58)Five friends, Betty, Rachel, Stevens, Veronica and Abigail, are sitting in a row facing east. 
+Betty is sitting between Veronica and Stevens, Rachel is second to the left of Stevens. 
+Who is sitting at the south end?
+
+59)Archie has 4 coins each of different denominations. 
+What is the number of different sums of money he can form (using one or more coins at a time)?
+
+60)For natural numbers x, y, and z, if xy + yz = 19 and yz + xz = 51, 
+then the minimum possible value of xyz is?
+
+61)Two trucks start from the opposite places on the main road, 
+150 km apart. The first truck runs for 25 km and takes a right turn and then runs 15 km. 
+It then turns left and then runs for another 25 km and then takes the direction to reach the main road. 
+In the meantime, due to a minor breakdown the other truck has run only 35 km along the main road. 
+What would be the distance between the two trucks at this point?
+
+62)A batsman's average for 20 games is 25 runs. 
+His highest score exceeds his lowest score by 64 runs. 
+If these 2 games are excluded, the average of the remaining 18 games is 24 runs. 
+The highest score of the player is.
+
+63)Sheldon is 24 years older than his son. 
+In two years, his age will be twice the age of his son. 
+The present age of the son is?
+
+64)A man spends 75% of his income. 
+His income increases by 20% and his expenditure also increases by 10%, 
+then the percentage increase in his savings is ?
+
+65)) A thief is noticed by a policeman from a distance of 200 m. 
+The thief starts running and the policeman chases him. 
+The thief and policeman run at the rate of 10 kmph and 11 kmph respectively. 
+At what distance(in km) will the policeman catch the thief?
+
+65)Raju walks 80 m towards south. 
+Then, he turns to his right & starts walking straight till he completes other 80 m. 
+Then again turning to his left he walks for 60 m. 
+He then turns to his left & walks for 80 m.
+
+66)A shopkeeper sells an item at a 250% loss. 
+If he had sold it for $60 more, he would have made a 15% profit. 
+What is the cost price of the item?
+
+67)If the average of five consecutive odd numbers is 23, 
+what is the largest of these numbers?
+
+
+
+
+
+
+
+
+
+
+
+
+
