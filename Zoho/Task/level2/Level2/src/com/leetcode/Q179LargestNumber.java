@@ -3,49 +3,11 @@ package com.leetcode;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class Q179 {
+public class Q179LargestNumber {
 
 	public static void main(String[] args) {
 		System.out.println(largestNumber(new int[]{1,30,34,5,9}));
 	}
-    /*public static String largestNumber(int[] nums) {    	
-    	String result = "";
-    	int index = 0;
-    	for(int i=0;i<nums.length;i++) {
-    		int largestNumber = 0;
-        	for(int j=0;j<nums.length;j++) {
-        		if(nums[j]>0) {
-    	    		String numberStr = String.valueOf(nums[j]);
-    	    		int currentNumber = Character.getNumericValue(numberStr.charAt(0));
-    	    		System.out.println(largestNumber+" "+nums[j]);
-    	        	if(largestNumber < currentNumber) {
-    	        		largestNumber = nums[j];
-    	        		index = j;
-    	        	}else if(largestNumber==currentNumber) {
-        	    		String largestNumberStr = String.valueOf(largestNumber);
-        	    		if(largestNumberStr) {
-        	    			
-        	    		}
-        	    		
-        	    		
-        	    		int currentNumber = Character.getNumericValue(largestNumber.charAt(0));
-        	    		for(int k=0;k<numberStr.length();k++) {
-        	    			if() {
-        	    				
-        	    			}
-        	      		}
-    	        	}
-        		}
-	        	if(j==nums.length-1) {
-	        		nums[index] = 0;
-	        		result += largestNumber;
-	        	}
-        	}
-    	}
-    	
-    	return result;
-    }*/
-	
 	
     /*public static String largestNumber(int[] nums) {
         String s[] = new String[nums.length];
