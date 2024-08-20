@@ -1,18 +1,22 @@
 package com.cheat_sheet;
 
 public class Combinations {    
-    public static String swapString(String a, int i, int j) {    
+    public static String swapString(String a, int i, int j) {  
+    	if(i!=j) {
+    		System.out.println(i+" "+j);
         char[] b =a.toCharArray();    
         char ch;    
         ch = b[i];    
         b[i] = b[j];    
         b[j] = ch;    
         return String.valueOf(b);    
+    	}
+    	return a;
     }    
         
     public static void main(String[] args)    
     {    
-        String str = "123";    
+        String str = "abcd";    
         int len = str.length();    
         generatePermutation(str, 0, len);    
     }    
@@ -25,9 +29,11 @@ public class Combinations {
         {    
             for (int i = start; i < end; i++)    
             {    
-                str = swapString(str,start,i);    
+                str = swapString(str,start,i);   
+                //System.out.println(start+" "+i);
                 generatePermutation(str,start+1,end);    
-                str = swapString(str,start,i);    
+                str = swapString(str,start,i);   
+                //System.out.println(start+" "+i);
             }    
         }    
     }    

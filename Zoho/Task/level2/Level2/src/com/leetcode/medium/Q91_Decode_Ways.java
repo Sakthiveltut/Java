@@ -1,14 +1,14 @@
-package com.leetcode;
+package com.leetcode.medium;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Q91 {
+public class Q91_Decode_Ways{
 	
 	//Decode Ways
 	public static void main(String[] args) {
-		System.out.println(numDecodings("123"));
+		System.out.println(numDecodings("12334"));
 	}
 	
 	public static int numDecodings(String s) {
@@ -24,7 +24,7 @@ public class Q91 {
         return res;
     }
 	
-    /*public static int numDecodings(String s) {
+    public static int numDecodings1(String s) {
         if(s == null || s.length() == 0) {
           return 0;
         }
@@ -43,5 +43,5 @@ public class Q91 {
           System.out.println(Arrays.toString(dp));
         }
         return dp[n-1];
-    }*/
+    }
 }

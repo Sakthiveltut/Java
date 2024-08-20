@@ -1,42 +1,32 @@
 package com.practice;
 
-class AreaCalculator {
+import java.util.*;
 
-    // Method to calculate the area of a circle (requires radius)
-    public double calculateArea(double radius) {
-        return Math.PI * radius * radius;
-    }
+public class Demo {
+    public static void main(String[] args) {
+        // Creating a sorted list of integers
+        List<Integer> list = new ArrayList<>(Arrays.asList(10, 20, 30, 40, 50, 60, 70));
 
-    // Overloaded method to calculate the area of a rectangle (requires width and height)
-    public double calculateArea(double width, double height) {
-        return width * height;
-    }
-    
-    // Overloaded method to calculate the area of a triangle (requires base and height)
-    public double calculateArea(double base, double height, boolean isTriangle) {
-        if (isTriangle) {
-            return 0.5 * base * height;
+        // Searching for an element in the list
+        int index = Collections.binarySearch(list, 30);
+
+        // Displaying the result
+        if (index >= 0) {
+            System.out.println("Element found at index: " + index);
         } else {
-            throw new IllegalArgumentException("Invalid parameters for calculating area of a triangle.");
+            System.out.println("Element not found. Insertion point: " + (-index - 1));
+        }
+
+        // Searching for an element that is not present in the list
+        int missingIndex = Collections.binarySearch(list, 35);
+        System.out.println(missingIndex);
+        // Displaying the result
+        if (missingIndex >= 0) {
+            System.out.println("Element found at index: " + missingIndex);
+        } else {
+            System.out.println("Element not found. Insertion point: " + (-missingIndex - 1));
         }
     }
 }
 
-public class Demo {
-    public static void main(String[] args) {
-        AreaCalculator calculator = new AreaCalculator();
-
-        // Calculate the area of a circle
-        double circleArea = calculator.calculateArea(5.0); // Calls calculateArea(double radius)
-        System.out.println("Area of the circle: " + circleArea);
-
-        // Calculate the area of a rectangle
-        double rectangleArea = calculator.calculateArea(10.0, 20.0); // Calls calculateArea(double width, double height)
-        System.out.println("Area of the rectangle: " + rectangleArea);
-
-        // Calculate the area of a triangle
-        double triangleArea = calculator.calculateArea(10.0, 15.0, true); // Calls calculateArea(double base, double height, boolean isTriangle)
-        System.out.println("Area of the triangle: " + triangleArea);
-    }
-}
 
