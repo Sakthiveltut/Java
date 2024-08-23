@@ -1,9 +1,9 @@
-package com.cheat_sheet;
+package com.basic;
 
-public class Combinations {    
+public class StringCombination {    
     public static String swapString(String a, int i, int j) {  
     	if(i!=j) {
-    		System.out.println(i+" "+j);
+    		//System.out.println(i+" "+j);
         char[] b =a.toCharArray();    
         char ch;    
         ch = b[i];    
@@ -16,7 +16,7 @@ public class Combinations {
         
     public static void main(String[] args)    
     {    
-        String str = "abcd";    
+        String str = "abc";    
         int len = str.length();    
         generatePermutation(str, 0, len);    
     }    

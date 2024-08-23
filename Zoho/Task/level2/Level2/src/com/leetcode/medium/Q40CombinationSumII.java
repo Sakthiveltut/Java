@@ -8,11 +8,11 @@ import java.util.List;
 public class Q40CombinationSumII {
 
 	public static void main(String[] args) {
-		//System.out.println(combinationSum2(new int[] {10,1,2,7,6,1,5}, 8));
+		System.out.println(combinationSum2(new int[] {10,1,2,7,6,1,5}, 8));
 		//System.out.println(combinationSum2(new int[] {2,5,2,1,2}, 5));
 		//System.out.println(combinationSum2(new int[] {1}, 2));
 		//System.out.println(combinationSum2(new int[] {1,1}, 1));
-		System.out.println(combinationSum2(new int[] {1,2}, 4));
+		//System.out.println(combinationSum2(new int[] {1,2}, 4));
 	}
 
 	
@@ -73,7 +73,7 @@ public class Q40CombinationSumII {
     	return result;
     }*/
 	
-	public static List<List<Integer>> combinationSum21(int[] candidates, int target) {
+	public static List<List<Integer>> combinationSum2(int[] candidates, int target) {
 		   List<List<Integer>> list = new LinkedList<List<Integer>>();
 		   Arrays.sort(candidates);
 		   backtrack(list, new ArrayList<Integer>(), candidates, target, 0);
@@ -88,15 +88,14 @@ public class Q40CombinationSumII {
 	      for (int i = start; i < cand.length; i++) {
 	         if(i > start && cand[i] == cand[i-1]) continue;
 	         tempList.add(cand[i]);
-	         System.out.println(list);
+	         //System.out.println(list);
 	         backtrack(list, tempList, cand, remain - cand[i], i+1);
 	         tempList.remove(tempList.size() - 1);
 	      }
 	   }
 	}
 	
-	
-	public static List<List<Integer>> combinationSum2(int[] candidates, int target) {
+	public static List<List<Integer>> combinationSum21(int[] candidates, int target) {
 		Arrays.sort(candidates);
 	    List<List<Integer>> list= new ArrayList<>();
 	    helper(0,candidates,target,list,new ArrayList<>());
