@@ -4,13 +4,14 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Q274H_Index {
+public class Q274_H_Index {
 
 	public static void main(String[] args) {
-		System.out.println(hIndex(new int[] {}));
+		System.out.println(hIndex(new int[] {3,0,6,1,5}));
+		System.out.println(hIndex(new int[] {1,3,1}));
 	}
 	
-    public static int hIndex1(int[] citations) {
+    public static int hIndex3(int[] citations) {
         int length = citations.length;
 
         Arrays.sort(citations);
@@ -35,7 +36,7 @@ public class Q274H_Index {
         return 0;
     }
     
-    public static int hIndex(int[] citations) {
+    public static int hIndex2(int[] citations) {
 	    Arrays.sort(citations);
 	    int len = citations.length;
 	    for(int i=0;i<len;i++) {
@@ -46,4 +47,25 @@ public class Q274H_Index {
 	    return 0;
     }
 
+    
+    public static int hIndex(int[] citations) {
+    	int length = citations.length;
+    	int[] arr = new int[length+1];
+    	
+    	for(int i=0;i<length;i++) {
+    		if(citations[i]<length) {
+    			arr[citations[i]]++;
+    		}else {
+    			arr[length]++;
+    		}
+    	}
+    	int result = 0;
+    	for(int i=length;i>=0;i--) {
+    		result+=arr[i];
+    		if(result>=i) {
+    			return i;
+    		}
+    	}
+    	return 0;
+    }
 }

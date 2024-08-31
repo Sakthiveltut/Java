@@ -7,10 +7,10 @@ public class Tetris {
     
 	private static char[][] grid = new char[18][10], currentShape;
 	private static byte startRowPos, startColPos;
+	private static int score = 0, previousScore=0;
 	
 	public static void main(String[] args) {
 		intializeGrid();
-		int score = 0, previousScore=0;
 		while(true) {
 			startRowPos = 1;
 			startColPos = (byte) ((grid[0].length/2)-1);
@@ -18,7 +18,7 @@ public class Tetris {
 			currentShape = new char[][]{{'*'}, {'*'}, {'*'}};
 	
 			if(isGameEnd()) {
-				System.out.println("Game over."+"Achieved score is "+score);
+				System.out.println("Game over. Achieved score is "+score);
 				break;
 			}
 			
@@ -35,9 +35,8 @@ public class Tetris {
 	
 	private static int calculateScore() {
 		int score = 0;
-		boolean removeRow = true; 
 		for(int row=grid.length-2;row>1;row--) {
-			
+			boolean removeRow = true; 
 			for(int col=1;col<grid[0].length-1;col++) {
 				if(grid[row][col]!='*') {
 					removeRow = false;
@@ -46,7 +45,7 @@ public class Tetris {
 			}
 			
 			if(removeRow) {
-				score = 100;
+				score += 100;
 				for(int selectedRow=row;selectedRow>1;selectedRow--) {
 					for(int col=1;col<grid[0].length-1;col++) {
 						grid[selectedRow][col] = grid[selectedRow-1][col];
@@ -59,6 +58,7 @@ public class Tetris {
 
 	private static void start() {
 		while(isValidDownMove()) {
+			System.out.println("Score "+score);
 			System.out.println("Q-rotate Left\nE-rotate right\nA-Move Left\nS-Move Down\nD-Move Right");
 			Scanner scanner = new Scanner(System.in);
 			char input = scanner.next().charAt(0);
@@ -168,7 +168,7 @@ public class Tetris {
 	
     private static char[][] getRandomShape() {
         Random random = new Random();
-        int shapeIndex = random.nextInt(7); 
+        int shapeIndex = random.nextInt(6); 
         
         switch (shapeIndex) {
             case 0:
@@ -182,12 +182,9 @@ public class Tetris {
             case 4:
                 return new char[][]{{'*', '*', ' '}, {' ', '*', '*'}}; // z
             case 5:
-                return new char[][]{{' ', '*'}, {' ', '*'}, {'*', '*'}}; // ml
-            case 6:
                 return new char[][]{{'*'}, {'*'}, {'*'}}; // i
             default:
                 return new char[][]{{}};
         }
     }
-
 }

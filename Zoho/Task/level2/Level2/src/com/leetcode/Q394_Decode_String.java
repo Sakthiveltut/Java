@@ -2,7 +2,7 @@ package com.leetcode;
 
 import java.util.Stack;
 
-public class Q394 {
+public class Q394_Decode_String {
 
 	public static void main(String[] args) {
 		String s = "a1[b12[2[ca]]]uk";

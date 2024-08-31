@@ -17,7 +17,7 @@ public class Q1329 {
                 {75, 31, 36, 44, 58, 8},
                 {22, 27, 33, 25, 68, 4},
                 {84, 28, 14, 11, 5, 50}
-            };
+           };
 		
 		int rowLength = mat.length, colLength = mat[0].length;
 		int i=0, j=0;
