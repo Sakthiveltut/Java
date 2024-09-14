@@ -1,6 +1,7 @@
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class FileCopyExample {
     public static void main(String[] args) {
@@ -19,7 +20,9 @@ public class FileCopyExample {
             int length;
             
             while ((length = fis.read(buffer)) > 0) {
-                fos.write(buffer, 0, length);
+				System.out.println("length "+length);
+				System.out.println(Arrays.toString(buffer));
+                fos.write(buffer, 0, 2);
             }
             
             System.out.println("File copied successfully.");
