@@ -5,7 +5,7 @@ import java.util.TreeSet;
 public class Q121_Best_Time_To_Buy_And_Sell_Stock {
 
 	public static void main(String[] args) {
-		System.out.println(maxProfit(new int[] {7,1,5,3,6,4}));
+		System.out.println(maxProfit(new int[] {7,1,5,3,6,8}));
 		//System.out.println(maxProfit(new int[] {3,2,6,5,0,3}));
 		//System.out.println(maxProfit(new int[] {2,4,1}));
 		//System.out.println(maxProfit(new int[] {1,4,2}));
@@ -13,6 +13,7 @@ public class Q121_Best_Time_To_Buy_And_Sell_Stock {
 	}
 	
     public static int maxProfit1(int[] prices) {
+    	final byte NO_ACTION = 0;
         TreeSet set = new TreeSet<>();
         
     	for(int i=0;i<prices.length-1;i++) {
@@ -25,7 +26,7 @@ public class Q121_Best_Time_To_Buy_And_Sell_Stock {
     		set.add(maxValue-prices[i]);
     	}
     	System.out.println(set);    	
-    	return set.isEmpty()?0:(int) set.getLast();
+    	return set.isEmpty()?NO_ACTION:(int) set.getLast();
     }
     
     public static int maxProfit(int[] prices) {

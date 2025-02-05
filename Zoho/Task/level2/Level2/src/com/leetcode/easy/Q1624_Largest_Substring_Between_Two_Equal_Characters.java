@@ -7,11 +7,11 @@ import java.util.TreeSet;
 public class Q1624_Largest_Substring_Between_Two_Equal_Characters {
 
 	public static void main(String[] args) {
-		System.out.println(maxLengthBetweenEqualCharacters("aa"));
+//		System.out.println(maxLengthBetweenEqualCharacters("aa"));
 		System.out.println(maxLengthBetweenEqualCharacters("abca"));
-		System.out.println(maxLengthBetweenEqualCharacters("cbzxy"));
-		System.out.println(maxLengthBetweenEqualCharacters("cabbac"));
-		System.out.println(maxLengthBetweenEqualCharacters("mgntdygtxrvxjnwksqhxuxtrv"));
+//		System.out.println(maxLengthBetweenEqualCharacters("cbzxy"));
+//		System.out.println(maxLengthBetweenEqualCharacters("cabbac"));
+//		System.out.println(maxLengthBetweenEqualCharacters("mgntdygtxrvxjnwksqhxuxtrv"));
 	}
     
     public static int maxLengthBetweenEqualCharacters(String s) {
@@ -24,6 +24,7 @@ public class Q1624_Largest_Substring_Between_Two_Equal_Characters {
     			}
     		}
     	}
+    	System.out.println(set);
     	return set.getLast();
     }
     
